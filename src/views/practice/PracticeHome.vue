@@ -47,7 +47,7 @@
           >
             <div class="bank-modes">
               <div class="mode-card" @click="startBankPractice(bank.product_id, 'random')">
-                <van-icon name="shuffle" color="#1989fa" size="24" />
+                <van-icon name="exchange" color="#1989fa" size="24" />
                 <div class="mode-name">乱序练习</div>
                 <div class="mode-desc">随机抽20题</div>
               </div>

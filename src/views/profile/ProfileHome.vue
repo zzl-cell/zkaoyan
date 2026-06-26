@@ -18,8 +18,8 @@
     <van-grid :column-num="4">
       <van-grid-item :label="'刷题数'" :value="String(userStore.userInfo?.total_questions || 0)" />
       <van-grid-item :label="'正确率'" :value="(userStore.userInfo?.accuracy || 0) + '%'" />
-      <van-grid-item :label="'粉丝'" :value="String(userStore.userInfo?.followers_count || 0)" @click="router.push('/profile/followers')" />
       <van-grid-item :label="'关注'" :value="String(userStore.userInfo?.following_count || 0)" @click="router.push('/profile/following')" />
+      <van-grid-item :label="'粉丝'" :value="String(userStore.userInfo?.followers_count || 0)" @click="router.push('/profile/followers')" />
     </van-grid>
 
     <!-- Sign-in banner -->
@@ -46,16 +46,16 @@
     <!-- Menu -->
     <van-cell-group>
       <van-cell title="收藏动态" is-link @click="router.push('/profile/favorites-posts')">
-        <template #icon><van-icon name="star-o" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="star-o" color="#ff6b6b" style="margin-right: 8px;" /></template>
       </van-cell>
       <van-cell title="虚拟币" is-link :value="String(userStore.coinBalance)" @click="router.push('/profile/coin')">
-        <template #icon><van-icon name="gold-coin-o" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="gold-coin-o" color="#ffc107" style="margin-right: 8px;" /></template>
       </van-cell>
       <van-cell title="已购资料" is-link @click="router.push('/shop/library')">
-        <template #icon><van-icon name="bag-o" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="bag-o" color="#07c160" style="margin-right: 8px;" /></template>
       </van-cell>
       <van-cell title="消息" is-link @click="router.push('/profile/messages')">
-        <template #icon><van-icon name="bell" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="bell" color="#ff9500" style="margin-right: 8px;" /></template>
         <template #right-icon>
           <van-badge v-if="hasUnread" dot>
             <van-icon name="arrow" />
@@ -64,13 +64,13 @@
         </template>
       </van-cell>
       <van-cell title="勋章墙" is-link @click="router.push('/profile/badges')">
-        <template #icon><van-icon name="medal-o" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="medal-o" color="#9c27b0" style="margin-right: 8px;" /></template>
       </van-cell>
       <van-cell title="纠错排行榜" is-link @click="router.push('/profile/correction-rank')">
-        <template #icon><van-icon name="bar-chart-o" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="bar-chart-o" color="#e91e63" style="margin-right: 8px;" /></template>
       </van-cell>
       <van-cell title="我的题库" is-link @click="router.push('/profile/questions')">
-        <template #icon><van-icon name="description" style="margin-right: 8px;" /></template>
+        <template #icon><van-icon name="description" color="#607d8b" style="margin-right: 8px;" /></template>
       </van-cell>
     </van-cell-group>
   </div>

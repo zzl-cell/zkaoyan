@@ -285,13 +285,30 @@ export function mockApiPlugin() {
               return
             }
 
+            // Compute follow counts from mock data
+            const follows = globalThis.__mockFollows || []
+            const followingCount = follows.filter(f => f.follower_id === userId).length
+            const followersCount = follows.filter(f => f.following_id === userId).length
+
+            // Compute study stats (use globalThis to avoid ordering issues)
+            const pStatsData = globalThis.__mockPracticeData || { studyRecords: [] }
+            const userRecords = (pStatsData.studyRecords || []).filter(r => r.user_id === userId)
+            const totalQ = userRecords.reduce((sum, r) => sum + (r.question_count || 0), 0)
+            const totalCorrect = userRecords.reduce((sum, r) => sum + (r.correct_count || 0), 0)
+            const acc = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0
+
+            // Coin balance (use globalThis to avoid ordering issues)
+            const cData = globalThis.__mockCoinData || { coinAccounts: new Map() }
+            const coinAcct = cData.coinAccounts.get(userId)
+            const coinBal = coinAcct?.balance || 0
+
             res.end(JSON.stringify(response(200, 'success', {
               ...user,
-              coin_balance: 0,
-              following_count: 0,
-              followers_count: 0,
-              total_questions: 0,
-              accuracy: 0,
+              coin_balance: coinBal,
+              following_count: followingCount,
+              followers_count: followersCount,
+              total_questions: totalQ,
+              accuracy: acc,
               password_hash: undefined,
             })))
             return
@@ -1883,7 +1900,15 @@ export function mockApiPlugin() {
           if (url === 'v1/feed/following' && method === 'GET') {
             const userId = getAuthUser(req)
             if (!userId) { res.end(JSON.stringify(response(401, '请先登录'))); return }
-            res.end(JSON.stringify(response(200, 'success', { list: [], total: 0, page: 1, page_size: 20 })))
+            const follows = (globalThis.__mockFollows || []).filter(f => f.follower_id === userId)
+            const followingIds = follows.map(f => f.following_id)
+            const page = parseInt(req.query?.page) || 1
+            const pageSize = parseInt(req.query?.page_size) || 20
+            let posts = feedData.posts.filter(p => followingIds.includes(p.user_id) && p.status === 'normal')
+            posts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+            const start = (page - 1) * pageSize
+            const list = posts.slice(start, start + pageSize).map(p => enrichPost(p, userId))
+            res.end(JSON.stringify(response(200, 'success', { list, total: posts.length, page, page_size: pageSize })))
             return
           }
 

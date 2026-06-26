@@ -66,7 +66,7 @@
       <!-- ===== Sprint mode: instant feedback ===== -->
       <template v-if="isSprint">
         <!-- Single/Judge -->
-        <van-cell-group v-if="!isMulti" inset>
+        <van-cell-group v-if="!isMulti" inset :key="'sprint-single-' + currentIndex">
           <van-cell
             v-for="opt in currentQuestion.options"
             :key="opt.label"
@@ -88,7 +88,7 @@
         </van-cell-group>
 
         <!-- Multi -->
-        <van-cell-group v-else inset>
+        <van-cell-group v-else inset :key="'sprint-multi-' + currentIndex">
           <van-cell
             v-for="opt in currentQuestion.options"
             :key="opt.label"
@@ -118,8 +118,8 @@
 
       <!-- ===== Random/Mock mode: exam style ===== -->
       <template v-else>
-        <!-- Single/Judge: radio group -->
-        <van-radio-group v-if="!submitted && !isMulti" v-model="selectedSingle" @change="onSingleChange">
+        <!-- Single/Judge: radio group (:key forces remount on question change) -->
+        <van-radio-group v-if="!submitted && !isMulti" v-model="selectedSingle" @change="onSingleChange" :key="'single-' + currentIndex">
           <van-cell-group inset>
             <van-cell
               v-for="opt in currentQuestion.options"
@@ -139,8 +139,8 @@
           </van-cell-group>
         </van-radio-group>
 
-        <!-- Multiple: checkbox group -->
-        <van-checkbox-group v-if="!submitted && isMulti" v-model="selectedMulti" @change="onMultiChange">
+        <!-- Multiple: checkbox group (:key forces remount on question change) -->
+        <van-checkbox-group v-if="!submitted && isMulti" v-model="selectedMulti" @change="onMultiChange" :key="'multi-' + currentIndex">
           <van-cell-group inset>
             <van-cell
               v-for="opt in currentQuestion.options"
@@ -482,18 +482,17 @@ async function toggleFavorite() {
 // ===== Restore answer =====
 function restoreCurrentAnswer() {
   const saved = userAnswers.value[String(currentIndex.value + 1)]
+  // Always reset both first (fresh arrays to avoid stale refs)
+  selectedMulti.value = []
+  selectedSingle.value = ''
   if (isMulti.value) {
     if (Array.isArray(saved) && saved.length > 0) {
       selectedMulti.value = [...saved]
     } else if (typeof saved === 'string' && saved) {
       selectedMulti.value = saved.split('')
-    } else {
-      selectedMulti.value = []
     }
-    selectedSingle.value = ''
   } else {
     selectedSingle.value = (typeof saved === 'string') ? saved : ''
-    selectedMulti.value = []
   }
 }
 

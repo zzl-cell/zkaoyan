@@ -77,7 +77,6 @@
           rows="3"
           maxlength="500"
           show-word-limit
-          autofocus
         />
         <van-button block type="primary" size="small" style="margin-top: 8px;" :loading="commenting" @click="submitComment">
           发表评论
@@ -91,10 +90,12 @@
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { showToast } from 'vant'
+import { useUserStore } from '../../stores/user'
 import request from '../../api/request'
 
 const router = useRouter()
 const route = useRoute()
+const userStore = useUserStore()
 
 const loading = ref(true)
 const post = ref(null)
@@ -175,11 +176,20 @@ async function submitComment() {
   if (!commentText.value.trim()) { showToast('请输入评论'); return }
   commenting.value = true
   try {
-    await request.post(`/feed/post/${route.params.id}/comment`, { content: commentText.value.trim() })
+    const res = await request.post(`/feed/post/${route.params.id}/comment`, { content: commentText.value.trim() })
+    // Append new comment locally instead of re-fetching all
+    comments.value.unshift({
+      comment_id: res.data?.comment_id || ('cmt_' + Date.now()),
+      post_id: route.params.id,
+      user_id: userStore.userInfo?.user_id,
+      content: commentText.value.trim(),
+      user: { user_id: userStore.userInfo?.user_id, nickname: userStore.nickname, avatar: userStore.avatar },
+      created_at: new Date().toISOString(),
+      replies: [],
+    })
     commentText.value = ''
     showCommentInput.value = false
     showToast('评论成功')
-    await loadComments()
     if (post.value) post.value.comment_count = (post.value.comment_count || 0) + 1
   } catch (err) {
     showToast(err.message || '评论失败')
