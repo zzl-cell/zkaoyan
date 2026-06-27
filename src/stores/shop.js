@@ -23,7 +23,7 @@ export const useShopStore = defineStore('shop', () => {
     loading.value = true
     try {
       const res = await getProducts(params)
-      products.value = res.data.list
+      products.value = res.data.products || res.data.list || []
     } finally {
       loading.value = false
     }
@@ -56,7 +56,7 @@ export const useShopStore = defineStore('shop', () => {
   // Fetch my library
   async function fetchLibrary() {
     const res = await getMyLibrary()
-    library.value = res.data.list
+    library.value = res.data.items || res.data.list || []
   }
 
   // Fetch library item detail

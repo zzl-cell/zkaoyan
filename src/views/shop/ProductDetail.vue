@@ -6,7 +6,7 @@
 
     <template v-else>
       <!-- Cover image -->
-      <van-image v-if="product.cover_url" width="100%" :src="product.cover_url" />
+      <van-image v-if="product.cover_url || product.cover_image" width="100%" :src="product.cover_url || product.cover_image" />
       <div v-else class="cover-placeholder">
         <van-icon :name="product.is_question_bank ? 'edit' : 'description'" size="48" color="#ccc" />
       </div>

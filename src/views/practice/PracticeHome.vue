@@ -159,7 +159,7 @@ async function loadData() {
 async function loadBanks() {
   try {
     const res = await getUserAssets()
-    banks.value = (res.data.list || []).filter(a => a.is_question_bank)
+    banks.value = (res.data.items || res.data.list || []).filter(a => a.is_question_bank)
   } catch {} finally {
     banksLoading.value = false
   }

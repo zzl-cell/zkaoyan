@@ -55,7 +55,7 @@
           :price="String(p.price)"
           currency="虚拟币"
           :desc="p.is_question_bank ? `${p.question_count}道题 · 已购${p.sales_count}人` : `已购 ${p.sales_count} 人`"
-          :thumb="p.cover_url || ''"
+          :thumb="p.cover_url || p.cover_image || ''"
           @click="router.push(`/shop/product/${p.product_id}`)"
         >
           <template #tags>

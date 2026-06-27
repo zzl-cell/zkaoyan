@@ -195,14 +195,8 @@ async function exportWord() {
   showLoadingToast({ message: '正在生成文档...', forbidClick: true })
 
   try {
-    // Call API to get export data
-    const res = await request.post('/practice/wrongbook/export', {})
-    const exportData = res.data
-
-    if (!exportData || !exportData.items || exportData.items.length === 0) {
-      showToast('暂无错题可导出')
-      return
-    }
+    // Use local data directly (no API call needed)
+    const exportData = { items: sortedList.value }
 
     // Generate HTML content for Word
     const html = generateWordHtml(exportData)
