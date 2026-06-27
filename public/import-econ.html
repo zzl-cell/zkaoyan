@@ -69,7 +69,9 @@ async function startImport() {
   log('📦 正在加载题库数据...');
   let questions;
   try {
-    const resp = await fetch('https://raw.githubusercontent.com/zzl-cell/zkaoyan/master/frontend/econ-import.json');
+    // Try same origin first, fallback to GitHub
+    let resp = await fetch('/econ-import.json');
+    if (!resp.ok) resp = await fetch('https://raw.githubusercontent.com/zzl-cell/zkaoyan/master/frontend/econ-import.json');
     const data = await resp.json();
     questions = data.questions;
     log(`✅ 已加载 ${questions.length} 道题目`);
