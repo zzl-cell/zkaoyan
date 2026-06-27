@@ -19,10 +19,13 @@
         <span>{{ dueCount }} 道题待复习</span>
       </div>
 
-      <!-- Export button -->
+      <!-- Export buttons -->
       <div class="export-bar">
-        <van-button plain type="primary" size="small" icon="description" :loading="exporting" loading-text="导出中..." @click="exportWord">
+        <van-button plain type="primary" size="small" icon="description" :loading="exporting" loading-text="导出中..." @click="exportWord" style="margin-right: 8px;">
           导出 Word
+        </van-button>
+        <van-button plain type="success" size="small" icon="down" :loading="exportingCsv" loading-text="导出中..." @click="exportCsv">
+          导出 CSV
         </van-button>
       </div>
 
@@ -76,6 +79,7 @@ import request from '../../api/request'
 const router = useRouter()
 const loading = ref(true)
 const exporting = ref(false)
+const exportingCsv = ref(false)
 const list = ref([])
 const total = ref(0)
 
@@ -301,6 +305,46 @@ function generateWordHtml(data) {
   </div>
 </body>
 </html>`
+}
+
+// ===== Export CSV =====
+async function exportCsv() {
+  if (sortedList.value.length === 0) {
+    showToast('暂无错题可导出')
+    return
+  }
+
+  exportingCsv.value = true
+  showLoadingToast({ message: '正在生成 CSV...', forbidClick: true })
+
+  try {
+    const token = localStorage.getItem('zky_token') || ''
+    const response = await fetch('/api/v1/practice/wrongbook/export', {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+
+    if (!response.ok) {
+      throw new Error('导出失败')
+    }
+
+    const blob = await response.blob()
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = '错题导出.csv'
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+
+    closeToast()
+    showToast({ message: '导出成功', type: 'success' })
+  } catch (err) {
+    closeToast()
+    showToast(err.message || '导出失败')
+  } finally {
+    exportingCsv.value = false
+  }
 }
 
 onMounted(() => { loadList() })

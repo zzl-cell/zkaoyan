@@ -233,6 +233,40 @@ export async function onRequest(context) {
         })
       }
 
+      // wrongbook/export — export wrong questions as CSV
+      if (segments[0] === 'wrongbook' && segments[1] === 'export') {
+        const payload = await extractUser(request, env)
+        if (!payload) return jsonUnauthorized('请先登录')
+
+        const records = await dbAll(db,
+          `SELECT wb.question_id, wb.user_answer, wb.created_at AS wrong_time,
+                  wb.question_snapshot, q.stem, q.options, q.answer AS correct_answer
+           FROM wrong_book wb
+           LEFT JOIN questions q ON wb.question_id = q.question_id
+           WHERE wb.user_id = ? AND (wb.is_removed = 0 OR ISNULL(wb.is_removed))
+           ORDER BY wb.created_at DESC`,
+          payload.user_id)
+
+        // Build CSV with BOM for Excel compatibility
+        const BOM = '﻿'
+        let csv = BOM + '题目ID,题目内容,正确答案,你的答案,错题时间\n'
+
+        for (const row of records) {
+          const stem = (row.stem || safeJsonParse(row.question_snapshot, {}).stem || '').replace(/"/g, '""').replace(/[\r\n]/g, ' ')
+          const correctAnswer = row.correct_answer || ''
+          const userAnswer = row.user_answer || ''
+          const wrongTime = (row.wrong_time || '').slice(0, 19)
+          csv += `${row.question_id},"${stem}",${correctAnswer},${userAnswer},${wrongTime}\n`
+        }
+
+        return new Response(csv, {
+          headers: {
+            'Content-Type': 'text/csv; charset=utf-8',
+            'Content-Disposition': 'attachment; filename="wrong_questions.csv"',
+          },
+        })
+      }
+
       // favorites — paginated
       if (segments[0] === 'favorites' && !segments[1]) {
         const payload = await extractUser(request, env)
