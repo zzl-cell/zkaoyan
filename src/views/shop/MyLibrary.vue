@@ -75,7 +75,7 @@ function onCellClick(item) {
 onMounted(async () => {
   try {
     const res = await getUserAssets()
-    assets.value = res.data.list || []
+    assets.value = res.data.items || res.data.list || []
   } catch {} finally {
     loading.value = false
   }

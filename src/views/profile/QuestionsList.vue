@@ -55,7 +55,8 @@ function formatTime(isoStr) {
 onMounted(async () => {
   try {
     const res = await getUserAssets()
-    banks.value = (res.data.list || []).filter(a => a.is_question_bank)
+    const list = res.data.items || res.data.list || []
+    banks.value = list.filter(a => a.is_question_bank)
   } catch {
     showToast('加载失败')
   } finally {
