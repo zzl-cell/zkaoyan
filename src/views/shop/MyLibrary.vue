@@ -13,7 +13,7 @@
         <van-cell
           v-for="item in assets"
           :key="item.product_id"
-          :title="item.product_name || item.name"
+          :title="item.name || item.product_name"
           :label="cellLabel(item)"
           is-link
           @click="onCellClick(item)"

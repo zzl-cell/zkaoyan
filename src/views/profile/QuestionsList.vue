@@ -22,7 +22,7 @@
             <van-icon name="edit" size="32" color="#1989fa" />
           </div>
           <div class="bank-card-body">
-            <div class="bank-name">{{ bank.product_name }}</div>
+            <div class="bank-name">{{ bank.name || bank.product_name }}</div>
             <div class="bank-meta">
               <span class="bank-count">{{ bank.question_count || '—' }} 道题</span>
               <span class="bank-category" v-if="bank.category">{{ bank.category }}</span>
