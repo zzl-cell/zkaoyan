@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
   privacy_settings TEXT DEFAULT '{}',
   default_exam_duration INTEGER DEFAULT 60,
   role TEXT DEFAULT 'user' NOT NULL,
+  status TEXT DEFAULT 'active' NOT NULL,
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL,
   last_login_at TEXT
