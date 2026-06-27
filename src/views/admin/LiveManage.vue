@@ -45,8 +45,10 @@
         </van-cell>
         <template #right>
           <van-button square type="primary" text="详情" @click="onDetail(room)" />
-          <van-button v-if="room.status !== 2" square type="warning" text="禁用" @click="onDisable(room)" />
-          <van-button v-if="room.status === 2" square type="success" text="启用" @click="onEnable(room)" />
+          <van-button v-if="room.status === 'waiting'" square type="success" text="批准" @click="onApprove(room)" />
+          <van-button v-if="room.status === 'waiting'" square type="danger" text="拒绝" @click="onReject(room)" />
+          <van-button v-if="room.status !== 'ended' && room.status !== 'rejected'" square type="warning" text="禁用" @click="onDisable(room)" />
+          <van-button v-if="room.status === 'ended' || room.status === 'rejected'" square type="success" text="启用" @click="onEnable(room)" />
         </template>
       </van-swipe-cell>
     </van-list>
@@ -97,11 +99,11 @@ onMounted(async () => {
 })
 
 function statusText(s) {
-  return { waiting: '等待中', live: '直播中', ended: '已结束' }[s] || s
+  return { waiting: '等待审批', approved: '已批准', live: '直播中', ended: '已结束', rejected: '已拒绝' }[s] || s
 }
 
 function statusTag(s) {
-  return { waiting: 'warning', live: 'danger', ended: 'default' }[s] || 'default'
+  return { waiting: 'warning', approved: 'success', live: 'danger', ended: 'default', rejected: 'danger' }[s] || 'default'
 }
 
 function roomLabel(room) {
@@ -149,18 +151,35 @@ async function onDelete(room) {
 async function onDisable(room) {
   try {
     await showConfirmDialog({ title: '确认禁用', message: `禁用直播间：${room.title}` })
-    await request.put(`/admin/live-rooms/${room.room_id || room.id}/disable`)
-    room.status = 2
+    await request.put(`/admin/live-rooms/${room.id}/disable`)
+    room.status = 'ended'
     showToast('已禁用')
-  } catch { showToast('操作失败，后端可能未部署') }
+  } catch { showToast('操作失败') }
 }
 
 async function onEnable(room) {
   try {
-    await request.put(`/admin/live-rooms/${room.room_id || room.id}/enable`)
-    room.status = 0
+    await request.put(`/admin/live-rooms/${room.id}/enable`)
+    room.status = 'waiting'
     showToast('已启用')
-  } catch { showToast('操作失败，后端可能未部署') }
+  } catch { showToast('操作失败') }
+}
+
+async function onApprove(room) {
+  try {
+    await request.put(`/admin/live-rooms/${room.id}/approve`)
+    room.status = 'approved'
+    showToast('已批准')
+  } catch { showToast('操作失败') }
+}
+
+async function onReject(room) {
+  try {
+    await showConfirmDialog({ title: '确认拒绝', message: `拒绝直播间：${room.title}` })
+    await request.put(`/admin/live-rooms/${room.id}/reject`)
+    room.status = 'rejected'
+    showToast('已拒绝')
+  } catch { showToast('操作失败') }
 }
 </script>
 

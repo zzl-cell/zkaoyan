@@ -64,6 +64,7 @@ export async function onRequest(context) {
       'password/reset': () => handlePasswordReset(db, env, body),
       'logout': () => jsonOk('已退出登录'),
       'privacy/toggle': () => handlePrivacyToggle(db, request, env),
+      'feedback': () => handleFeedback(db, request, env, body),
     }
     if (action.startsWith('follow/')) {
       return handleFollow(db, request, env, segments[1])
@@ -409,6 +410,32 @@ async function handleFollowersList(db, request, env, userId, url) {
   }
 
   return jsonOk('success', { list: rows, total: totalRow?.cnt || 0, page, page_size: pageSize })
+}
+
+// ── Feedback ──
+
+async function handleFeedback(db, request, env, body) {
+  const payload = await extractUser(request, env)
+  if (!payload) return jsonUnauthorized('请先登录')
+
+  const { content, images, contact } = body
+  if (!content || !content.trim()) return jsonBad('请输入反馈内容')
+
+  const feedbackId = uuid()
+  const now = new Date().toISOString()
+
+  await dbRun(db,
+    `INSERT INTO feedbacks (feedback_id, user_id, title, content, type, contact, images, status, reward_coins, replies, created_at, updated_at)
+     VALUES (?, ?, ?, ?, 'feedback', ?, ?, 'pending', 0, '[]', ?, ?)`,
+    feedbackId, payload.user_id,
+    content.trim().slice(0, 50),
+    content.trim(),
+    contact || '',
+    JSON.stringify(images || []),
+    now, now
+  )
+
+  return jsonOk('提交成功', { feedback_id: feedbackId })
 }
 
 // ── Helpers ──

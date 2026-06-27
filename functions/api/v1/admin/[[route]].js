@@ -81,6 +81,8 @@ export async function onRequest(context) {
       try { body = await request.json() } catch {}
       if (action === 'live-rooms' && segments[1] && segments[2] === 'disable') return await handleLiveDisable(db, segments[1])
       if (action === 'live-rooms' && segments[1] && segments[2] === 'enable') return await handleLiveEnable(db, segments[1])
+      if (action === 'live-rooms' && segments[1] && segments[2] === 'approve') return await handleLiveApprove(db, segments[1])
+      if (action === 'live-rooms' && segments[1] && segments[2] === 'reject') return await handleLiveReject(db, segments[1])
       return jsonBad(`Unknown route: PUT ${action}`)
     }
 
@@ -885,6 +887,26 @@ async function handleLiveEnable(db, roomId) {
 
   await dbRun(db, "UPDATE live_rooms SET status = 'waiting' WHERE id = ?", roomId)
   return jsonOk('Room enabled')
+}
+
+// ── PUT /admin/live-rooms/{roomId}/approve ── Approve live room ──
+
+async function handleLiveApprove(db, roomId) {
+  if (!roomId) return jsonBad('Missing room_id')
+  const room = await dbGet(db, 'SELECT id FROM live_rooms WHERE id = ?', roomId)
+  if (!room) return jsonBad('Room not found')
+  await dbRun(db, "UPDATE live_rooms SET status = 'approved' WHERE id = ?", roomId)
+  return jsonOk('已批准')
+}
+
+// ── PUT /admin/live-rooms/{roomId}/reject ── Reject live room ──
+
+async function handleLiveReject(db, roomId) {
+  if (!roomId) return jsonBad('Missing room_id')
+  const room = await dbGet(db, 'SELECT id FROM live_rooms WHERE id = ?', roomId)
+  if (!room) return jsonBad('Room not found')
+  await dbRun(db, "UPDATE live_rooms SET status = 'rejected' WHERE id = ?", roomId)
+  return jsonOk('已拒绝')
 }
 
 // ── POST /admin/coin_compensate ── Grant 10000 coins to all old users who didn't get signup bonus ──
