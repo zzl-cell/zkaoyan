@@ -111,19 +111,20 @@ async function handleRegister(db, env, { phone, code, password }) {
   })
 
   await dbRun(db,
-    `INSERT INTO users (user_id, phone, nickname, avatar, bio, password_hash, privacy_settings, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO users (user_id, phone, nickname, avatar, bio, password_hash, privacy_settings, signup_bonus_given, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, 1, ?, ?)`,
     userId, phone, `用户${phone.slice(-4)}`, '', '', passwordHash, privacy, now, now,
   )
 
-  // Create coin account with 1000 register bonus
+  // Create coin account with 10000 register bonus
+  const bonus = 10000
   await dbRun(db,
-    'INSERT INTO coin_accounts (user_id, balance, total_earned, total_spent, created_at, updated_at) VALUES (?, 1000, 1000, 0, ?, ?)',
-    userId, now, now,
+    'INSERT INTO coin_accounts (user_id, balance, total_earned, total_spent, created_at, updated_at) VALUES (?, ?, ?, 0, ?, ?)',
+    userId, bonus, bonus, now, now,
   )
   await dbRun(db,
     'INSERT INTO coin_transactions (transaction_id, user_id, amount, type, scene, description, balance_after, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-    uuid(), userId, 1000, 'earn', 'register_bonus', '注册赠送1000虚拟币', 1000, now,
+    uuid(), userId, bonus, 'earn', 'register_bonus', '注册赠送10000虚拟币', bonus, now,
   )
 
   const token = await generateToken({ user_id: userId, phone }, env)

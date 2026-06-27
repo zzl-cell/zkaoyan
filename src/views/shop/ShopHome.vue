@@ -5,35 +5,18 @@
       <van-icon name="bag-o" size="20" @click="router.push('/shop/library')" />
     </div>
 
-    <!-- Category dropdown trigger -->
-    <div class="category-trigger" @click="showPanel = !showPanel">
-      <span class="trigger-text">{{ selectedCategory }}</span>
-      <van-icon :name="showPanel ? 'arrow-up' : 'arrow-down'" size="14" color="#999" />
-    </div>
-
-    <!-- Category dropdown panel -->
-    <transition name="slide-down">
-      <div v-if="showPanel" class="category-panel">
-        <div class="category-grid">
-          <div
-            v-for="cat in visibleCategories"
-            :key="cat"
-            class="category-cell"
-            :class="{ active: selectedCategory === cat }"
-            @click="selectCategory(cat)"
-          >
-            {{ cat }}
-          </div>
-        </div>
-        <div v-if="dynamicCategories.length > 8" class="expand-btn" @click="expanded = !expanded">
-          <span>{{ expanded ? '收起' : '展开全部' }}</span>
-          <van-icon :name="expanded ? 'arrow-up' : 'arrow-down'" size="12" />
-        </div>
+    <!-- Category scroll bar (always visible) -->
+    <div class="category-bar">
+      <div
+        v-for="cat in dynamicCategories"
+        :key="cat"
+        class="category-chip"
+        :class="{ active: selectedCategory === cat }"
+        @click="selectCategory(cat)"
+      >
+        {{ cat }}
       </div>
-    </transition>
-
-    <!-- Overlay to close panel -->
-    <div v-if="showPanel" class="panel-overlay" @click="showPanel = false" />
+    </div>
 
     <!-- Sort bar -->
     <van-dropdown-menu @close="onSortChange">
@@ -53,7 +36,7 @@
           :title="p.name"
           :price="String(p.price)"
           currency="虚拟币"
-          :desc="p.is_question_bank ? `${p.question_count}道题 · 已购${p.sales_count}人` : `已购 ${p.sales_count} 人`"
+          :desc="p.is_question_bank ? `${p.question_count}道题` : (p.description || '').slice(0, 20)"
           :thumb="p.cover_url || p.cover_image || ''"
           @click="router.push(`/shop/product/${p.product_id}`)"
         >
@@ -76,8 +59,6 @@ import { useShopStore } from '../../stores/shop'
 const router = useRouter()
 const shopStore = useShopStore()
 
-const showPanel = ref(false)
-const expanded = ref(false)
 const selectedCategory = ref('全部')
 const sort = ref(0)
 
@@ -96,14 +77,8 @@ const dynamicCategories = computed(() => {
   return ['全部', ...cats]
 })
 
-const visibleCategories = computed(() => {
-  if (expanded.value) return dynamicCategories.value
-  return dynamicCategories.value.slice(0, 8)
-})
-
 function selectCategory(cat) {
   selectedCategory.value = cat
-  showPanel.value = false
   loadProducts()
 }
 
@@ -130,36 +105,17 @@ onMounted(() => {
   padding: 8px 16px; background: #fff;
 }
 .header-title { font-size: 16px; font-weight: 600; }
-.category-trigger {
-  display: flex; align-items: center; justify-content: center; gap: 4px;
-  padding: 10px 16px; background: #fff; cursor: pointer;
+.category-bar {
+  display: flex; gap: 8px; padding: 10px 16px;
+  background: #fff; overflow-x: auto; -webkit-overflow-scrolling: touch;
   border-bottom: 1px solid #f5f5f5;
 }
-.trigger-text { font-size: 14px; color: #333; font-weight: 500; }
-.category-panel {
-  background: #fff; padding: 12px 16px;
-  border-radius: 0 0 12px 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  position: relative; z-index: 101;
+.category-bar::-webkit-scrollbar { display: none; }
+.category-chip {
+  flex-shrink: 0; padding: 6px 14px; border-radius: 16px;
+  background: #F5F7FA; font-size: 13px; color: #666;
+  cursor: pointer; border: 1.5px solid transparent; transition: all 0.2s;
+  white-space: nowrap;
 }
-.category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.category-cell {
-  height: 36px; display: flex; align-items: center; justify-content: center;
-  background: #F5F7FA; border-radius: 8px; font-size: 14px; color: #333;
-  cursor: pointer; border: 2px solid transparent; transition: all 0.2s;
-}
-.category-cell.active { background: #E8F4FD; border-color: #1989fa; color: #1989fa; }
-.expand-btn {
-  display: flex; align-items: center; justify-content: center; gap: 4px;
-  padding: 10px 0; font-size: 13px; color: #999; cursor: pointer;
-}
-.panel-overlay {
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.3); z-index: 100;
-}
-.slide-down-enter-active, .slide-down-leave-active {
-  transition: all 0.3s ease;
-}
-.slide-down-enter-from, .slide-down-leave-to {
-  opacity: 0; transform: translateY(-10px);
-}
+.category-chip.active { background: #E8F4FD; border-color: #1989fa; color: #1989fa; font-weight: 500; }
 </style>

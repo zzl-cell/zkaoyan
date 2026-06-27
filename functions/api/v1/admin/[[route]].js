@@ -71,6 +71,7 @@ export async function onRequest(context) {
       if (action === 'questions_delete') return await handleQuestionDelete(db, body)
       if (action === 'questions_batch_import') return await handleQuestionsBatchImport(db, body)
       if (action === 'orders_refund') return await handleOrdersRefund(db, body)
+      if (action === 'coin_compensate') return await handleCoinCompensate(db, user)
       return jsonBad(`Unknown route: POST ${action}`)
     }
 
@@ -884,4 +885,52 @@ async function handleLiveEnable(db, roomId) {
 
   await dbRun(db, "UPDATE live_rooms SET status = 'waiting' WHERE id = ?", roomId)
   return jsonOk('Room enabled')
+}
+
+// ── POST /admin/coin_compensate ── Grant 10000 coins to all old users who didn't get signup bonus ──
+
+async function handleCoinCompensate(db, admin) {
+  const now = new Date().toISOString()
+  const bonus = 10000
+
+  // Find users who haven't received the signup bonus
+  const users = await dbAll(db,
+    "SELECT user_id FROM users WHERE signup_bonus_given = 0 OR signup_bonus_given IS NULL"
+  )
+
+  if (users.length === 0) {
+    return jsonOk('无需补偿，所有用户已领取', { count: 0, total_coins: 0 })
+  }
+
+  let compensated = 0
+  for (const u of users) {
+    // Ensure coin_accounts row exists
+    let account = await dbGet(db, 'SELECT balance, total_earned FROM coin_accounts WHERE user_id = ?', u.user_id)
+    if (!account) {
+      await dbRun(db,
+        'INSERT INTO coin_accounts (user_id, balance, total_earned, total_spent, created_at, updated_at) VALUES (?, ?, ?, 0, ?, ?)',
+        u.user_id, bonus, bonus, now, now
+      )
+    } else {
+      const newBalance = account.balance + bonus
+      const newEarned = account.total_earned + bonus
+      await dbRun(db,
+        'UPDATE coin_accounts SET balance = ?, total_earned = ?, updated_at = ? WHERE user_id = ?',
+        newBalance, newEarned, now, u.user_id
+      )
+    }
+
+    // Record transaction
+    await dbRun(db,
+      'INSERT INTO coin_transactions (transaction_id, user_id, amount, type, scene, description, balance_after, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+      uuid(), u.user_id, bonus, 'earn', 'admin_compensate', '老用户补偿10000虚拟币',
+      (account?.balance || 0) + bonus, now
+    )
+
+    // Mark as compensated
+    await dbRun(db, 'UPDATE users SET signup_bonus_given = 1 WHERE user_id = ?', u.user_id)
+    compensated++
+  }
+
+  return jsonOk('补偿完成', { count: compensated, total_coins: compensated * bonus })
 }

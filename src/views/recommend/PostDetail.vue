@@ -1,6 +1,10 @@
 <template>
   <div class="post-detail">
-    <van-nav-bar title="动态详情" left-arrow @click-left="router.back()" />
+    <van-nav-bar title="动态详情" left-arrow @click-left="router.back()">
+      <template #right>
+        <van-icon v-if="canDelete" name="delete-o" size="20" color="#ee0a24" @click="onDeletePost" />
+      </template>
+    </van-nav-bar>
 
     <van-loading v-if="loading" style="text-align: center; padding: 60px 0;" />
 
@@ -87,9 +91,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { showToast } from 'vant'
+import { showToast, showConfirmDialog } from 'vant'
 import { useUserStore } from '../../stores/user'
 import request from '../../api/request'
 
@@ -103,6 +107,11 @@ const comments = ref([])
 const showCommentInput = ref(false)
 const commentText = ref('')
 const commenting = ref(false)
+
+const canDelete = computed(() => {
+  if (!post.value || !userStore.userInfo) return false
+  return post.value.user_id === userStore.userInfo.user_id || userStore.userInfo.role === 'admin'
+})
 
 function formatTime(isoStr) {
   if (!isoStr) return ''
@@ -200,6 +209,15 @@ async function submitComment() {
 
 function onShare() {
   showToast('分享功能开发中')
+}
+
+async function onDeletePost() {
+  try {
+    await showConfirmDialog({ title: '确认删除', message: '删除后不可恢复，确定要删除这条动态吗？' })
+    await request.delete(`/feed/post/${post.value.post_id}`)
+    showToast('已删除')
+    router.back()
+  } catch {}
 }
 
 onMounted(async () => {

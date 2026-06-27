@@ -36,6 +36,7 @@
                 <van-tag v-if="post.topic_tags?.length" size="small" plain type="primary" style="margin-left: auto;">
                   {{ post.topic_tags[0] }}
                 </van-tag>
+                <van-icon v-if="isOwnerOrAdmin(post)" name="cross" size="16" color="#c8c9cc" style="margin-left: 4px;" @click.stop="deletePost(post)" />
               </div>
               <div class="feed-content">{{ post.content }}</div>
               <div class="feed-actions">
@@ -114,7 +115,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { showToast } from 'vant'
+import { showToast, showConfirmDialog } from 'vant'
 import { useUserStore } from '../../stores/user'
 import { useFeedStore } from '../../stores/feed'
 import request from '../../api/request'
@@ -181,6 +182,20 @@ async function loadFollowing() {
 function onRefresh() { loadRecommend(true) }
 function onRefreshFollowing() { loadFollowing() }
 function loadMore() { loadRecommend(false) }
+
+function isOwnerOrAdmin(post) {
+  if (!userStore.userInfo) return false
+  return post.user_id === userStore.userInfo.user_id || userStore.userInfo.role === 'admin'
+}
+
+async function deletePost(post) {
+  try {
+    await showConfirmDialog({ title: '确认删除', message: '确定要删除这条动态吗？' })
+    await request.delete(`/feed/post/${post.post_id}`)
+    feedStore.recommendList = feedStore.recommendList.filter(p => p.post_id !== post.post_id)
+    showToast('已删除')
+  } catch {}
+}
 
 onMounted(() => {
   if (feedStore.recommendList.length === 0) loadRecommend(true)

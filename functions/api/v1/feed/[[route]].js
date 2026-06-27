@@ -11,6 +11,12 @@ import {
 
 // ── Helpers ──
 
+function safeJson(str, fallback) {
+  if (Array.isArray(str)) return str
+  if (typeof str === 'string') { try { return JSON.parse(str) } catch { return fallback } }
+  return str ?? fallback
+}
+
 function parseSegments(url) {
   return url.pathname
     .replace(/^\/api\/v1\/feed\//, '')
@@ -57,7 +63,14 @@ async function enrichPost(db, post, userId) {
     )
     isFavorited = !!fav
   }
-  return { ...post, user: user || null, is_liked: isLiked, is_favorited: isFavorited }
+  return {
+    ...post,
+    user: user || null,
+    is_liked: isLiked,
+    is_favorited: isFavorited,
+    topic_tags: safeJson(post.topic_tags, []),
+    images: safeJson(post.images, []),
+  }
 }
 
 // ── Main handler ──
@@ -533,13 +546,18 @@ export async function onRequest(context) {
       // Some DELETE requests may not have a body
     }
 
-    // /feed/post/{postId} — soft delete
+    // /feed/post/{postId} — soft delete (author or admin)
     if (segments[0] === 'post' && segments.length === 2) {
       if (!user) return jsonUnauthorized('未登录')
       const postId = segments[1]
       const post = await dbGet(db, 'SELECT user_id FROM posts WHERE post_id = ?', postId)
       if (!post) return jsonBad('帖子不存在')
-      if (post.user_id !== user.user_id) return jsonUnauthorized('无权操作')
+      // Check: author or admin
+      const isAuthor = post.user_id === user.user_id
+      if (!isAuthor) {
+        const u = await dbGet(db, 'SELECT role FROM users WHERE user_id = ?', user.user_id)
+        if (u?.role !== 'admin') return jsonUnauthorized('无权操作')
+      }
       await dbRun(
         db,
         "UPDATE posts SET status = 'deleted', updated_at = datetime('now') WHERE post_id = ?",
