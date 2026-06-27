@@ -51,10 +51,10 @@
                 </span>
               </div>
               <!-- Inline comment input -->
-              <div v-if="commentTarget === post.post_id" class="inline-comment">
+              <div v-if="commentTarget === post.post_id" class="inline-comment" @click.stop>
                 <van-field v-model="commentText" placeholder="写评论..." size="small" @keydown.enter="submitInlineComment(post)">
                   <template #button>
-                    <van-button size="small" type="primary" @click="submitInlineComment(post)">发送</van-button>
+                    <van-button size="small" type="primary" @click.stop="submitInlineComment(post)">发送</van-button>
                   </template>
                 </van-field>
               </div>
@@ -96,10 +96,10 @@
                   <van-icon :name="post.is_favorited ? 'star' : 'star-o'" />
                 </span>
               </div>
-              <div v-if="commentTarget === post.post_id" class="inline-comment">
+              <div v-if="commentTarget === post.post_id" class="inline-comment" @click.stop>
                 <van-field v-model="commentText" placeholder="写评论..." size="small" @keydown.enter="submitInlineComment(post)">
                   <template #button>
-                    <van-button size="small" type="primary" @click="submitInlineComment(post)">发送</van-button>
+                    <van-button size="small" type="primary" @click.stop="submitInlineComment(post)">发送</van-button>
                   </template>
                 </van-field>
               </div>

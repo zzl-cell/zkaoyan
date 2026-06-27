@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id TEXT UNIQUE NOT NULL,
+  phone TEXT UNIQUE NOT NULL,
+  nickname TEXT DEFAULT '',
+  avatar TEXT DEFAULT '',
+  bio TEXT DEFAULT '',
+  grade TEXT DEFAULT '',
+  exam_goals TEXT DEFAULT '[]',
+  interest_tags TEXT DEFAULT '[]',
+  password_hash TEXT NOT NULL,
+  is_private INTEGER DEFAULT 0,
+  privacy_settings TEXT DEFAULT '{}',
+  default_exam_duration INTEGER DEFAULT 60,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  last_login_at TEXT
+);

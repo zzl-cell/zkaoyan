@@ -15,11 +15,12 @@
     </div>
 
     <!-- Stats -->
-    <van-grid :column-num="4">
+    <van-grid :column-num="5">
       <van-grid-item :label="'刷题数'" :value="String(userStore.userInfo?.total_questions || 0)" />
       <van-grid-item :label="'正确率'" :value="(userStore.userInfo?.accuracy || 0) + '%'" />
       <van-grid-item :label="'关注'" :value="String(userStore.userInfo?.following_count || 0)" @click="router.push('/profile/following')" />
       <van-grid-item :label="'粉丝'" :value="String(userStore.userInfo?.followers_count || 0)" @click="router.push('/profile/followers')" />
+      <van-grid-item :label="'获赞'" :value="String(userStore.userInfo?.like_count || 0)" />
     </van-grid>
 
     <!-- Sign-in banner -->
@@ -73,6 +74,11 @@
         <template #icon><van-icon name="description" color="#607d8b" style="margin-right: 8px;" /></template>
       </van-cell>
     </van-cell-group>
+
+    <!-- Admin entry (admin only) -->
+    <van-cell-group v-if="isAdmin" style="margin-top: 12px;">
+      <van-cell title="后台管理" is-link @click="router.push('/admin')" icon="manager-o" value="管理员" />
+    </van-cell-group>
   </div>
 </template>
 
@@ -91,6 +97,7 @@ const coinStore = useCoinStore()
 
 const signLoading = ref(false)
 const hasUnread = computed(() => notificationStore.hasUnread)
+const isAdmin = computed(() => userStore.userInfo?.role === 'admin')
 
 async function onSign() {
   signLoading.value = true

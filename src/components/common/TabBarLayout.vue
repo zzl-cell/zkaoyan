@@ -6,6 +6,7 @@
     <van-tabbar v-model="activeTab" route @change="onTabChange">
       <van-tabbar-item to="/recommend" icon="home-o">推荐</van-tabbar-item>
       <van-tabbar-item to="/practice" icon="edit">练习</van-tabbar-item>
+      <van-tabbar-item to="/live" icon="video-o">直播</van-tabbar-item>
       <van-tabbar-item to="/shop" icon="shop-o">资料</van-tabbar-item>
       <van-tabbar-item to="/profile" icon="user-o" :badge="unreadBadge">我的</van-tabbar-item>
     </van-tabbar>
@@ -23,8 +24,9 @@ const notificationStore = useNotificationStore()
 const tabMap = {
   '/recommend': 0,
   '/practice': 1,
-  '/shop': 2,
-  '/profile': 3,
+  '/live': 2,
+  '/shop': 3,
+  '/profile': 4,
 }
 
 const activeTab = ref(0)

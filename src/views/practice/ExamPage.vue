@@ -372,6 +372,9 @@ const typeTagType = computed(() => {
 
 // Watch question change to restore answer + check favorite
 watch(currentIndex, () => {
+  // Force reset before restoring (extra safety for multi-choice)
+  selectedMulti.value = []
+  selectedSingle.value = ''
   restoreCurrentAnswer()
   if (isSprint.value) checkSprintFeedback()
   checkFavorited()

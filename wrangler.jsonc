@@ -1,8 +1,12 @@
 {
   "name": "zkaoyan",
   "compatibility_date": "2026-06-26",
-  "assets": {
-    "directory": "dist",
-    "not_found_handling": "single-page-application"
-  }
+  "pages_build_output_dir": "dist",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "quiz-community-db",
+      "database_id": "8d92f801-b793-4479-b93b-d6e250a47e64"
+    }
+  ]
 }

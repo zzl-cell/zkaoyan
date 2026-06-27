@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { getToken, clearAll } from '../utils/storage'
+import { showToast } from 'vant'
+import { getToken, clearAll, getUserInfo } from '../utils/storage'
 import { isTokenExpired } from '../utils/auth'
 
 // TabBar layout component
@@ -92,6 +93,36 @@ const practiceRoutes = [
     name: 'StudyHistory',
     component: () => import('../views/practice/StudyHistory.vue'),
     meta: { title: '刷题记录', showTabBar: true },
+  },
+]
+
+// ========================
+// Live Tab routes
+// ========================
+const liveRoutes = [
+  {
+    path: '/live',
+    name: 'LiveSquare',
+    component: () => import('../views/live/LiveSquare.vue'),
+    meta: { title: '直播', showTabBar: true },
+  },
+  {
+    path: '/live/create',
+    name: 'CreateLive',
+    component: () => import('../views/live/CreateLive.vue'),
+    meta: { title: '开播', showTabBar: false },
+  },
+  {
+    path: '/live/replay',
+    name: 'ReplayList',
+    component: () => import('../views/live/ReplayList.vue'),
+    meta: { title: '直播回放', showTabBar: true },
+  },
+  {
+    path: '/live/:roomId',
+    name: 'LiveRoom',
+    component: () => import('../views/live/LiveRoom.vue'),
+    meta: { title: '直播间', showTabBar: false },
   },
 ]
 
@@ -315,6 +346,54 @@ const authRoutes = [
 ]
 
 // ========================
+// Admin routes (no TabBar, admin-only)
+// ========================
+const adminRoutes = [
+  {
+    path: '/admin',
+    name: 'AdminDashboard',
+    component: () => import('../views/admin/AdminDashboard.vue'),
+    meta: { title: '后台管理', showTabBar: false, requiresAdmin: true },
+  },
+  {
+    path: '/admin/users',
+    name: 'AdminUsers',
+    component: () => import('../views/admin/AdminUsers.vue'),
+    meta: { title: '用户管理', showTabBar: false, requiresAdmin: true },
+  },
+  {
+    path: '/admin/feedbacks',
+    name: 'AdminFeedbacks',
+    component: () => import('../views/admin/AdminFeedbacks.vue'),
+    meta: { title: '工单管理', showTabBar: false, requiresAdmin: true },
+  },
+  {
+    path: '/admin/notices',
+    name: 'AdminNotices',
+    component: () => import('../views/admin/AdminNotices.vue'),
+    meta: { title: '公告管理', showTabBar: false, requiresAdmin: true },
+  },
+  {
+    path: '/admin/questions',
+    name: 'AdminQuestions',
+    component: () => import('../views/admin/Questions.vue'),
+    meta: { title: '题目管理', showTabBar: false, requiresAdmin: true },
+  },
+  {
+    path: '/admin/orders',
+    name: 'AdminOrders',
+    component: () => import('../views/admin/Orders.vue'),
+    meta: { title: '订单管理', showTabBar: false, requiresAdmin: true },
+  },
+  {
+    path: '/admin/live',
+    name: 'AdminLiveManage',
+    component: () => import('../views/admin/LiveManage.vue'),
+    meta: { title: '直播管理', showTabBar: false, requiresAdmin: true },
+  },
+]
+
+// ========================
 // Deep link redirects
 // ========================
 const deepLinkRoutes = [
@@ -333,12 +412,14 @@ const routes = [
     children: [
       ...recommendRoutes,
       ...practiceRoutes,
+      ...liveRoutes,
       ...shopRoutes,
       ...noticeRoutes,
       ...profileRoutes,
     ],
   },
   ...authRoutes,
+  ...adminRoutes,
   ...deepLinkRoutes,
   { path: '/:pathMatch(.*)*', redirect: '/recommend' },
 ]
@@ -363,6 +444,15 @@ router.beforeEach((to, from, next) => {
       clearAll()
       next(`/login?redirect=${to.fullPath}`)
       return
+    }
+    // Admin route guard
+    if (to.meta.requiresAdmin) {
+      const info = getUserInfo()
+      if (!info || info.role !== 'admin') {
+        showToast('无权限访问')
+        next('/recommend')
+        return
+      }
     }
     next()
   } else if (
