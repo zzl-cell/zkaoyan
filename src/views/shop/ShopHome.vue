@@ -1,10 +1,9 @@
 <template>
   <div class="shop-home">
-    <van-nav-bar title="资料">
-      <template #right>
-        <van-icon name="bag-o" size="20" @click="router.push('/shop/library')" />
-      </template>
-    </van-nav-bar>
+    <div class="page-header">
+      <div class="header-title">资料</div>
+      <van-icon name="bag-o" size="20" @click="router.push('/shop/library')" />
+    </div>
 
     <!-- Category dropdown trigger -->
     <div class="category-trigger" @click="showPanel = !showPanel">
@@ -126,6 +125,11 @@ onMounted(() => {
 
 <style scoped>
 .shop-home { min-height: 100vh; background: #f7f8fa; }
+.page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 16px; background: #fff;
+}
+.header-title { font-size: 16px; font-weight: 600; }
 .category-trigger {
   display: flex; align-items: center; justify-content: center; gap: 4px;
   padding: 10px 16px; background: #fff; cursor: pointer;

@@ -1,10 +1,9 @@
 <template>
   <div class="recommend-feed">
-    <van-nav-bar title="推荐">
-      <template #right>
-        <van-icon name="search" size="20" @click="router.push('/recommend/search')" />
-      </template>
-    </van-nav-bar>
+    <div class="page-header">
+      <div class="header-title">推荐</div>
+      <van-icon name="search" size="20" @click="router.push('/recommend/search')" />
+    </div>
 
     <van-tabs v-model:active="activeTab">
       <van-tab title="推荐">
@@ -240,6 +239,11 @@ async function submitInlineComment(post) {
 
 <style scoped>
 .recommend-feed { min-height: 100vh; background: #f7f8fa; }
+.page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 16px; background: #fff;
+}
+.header-title { font-size: 16px; font-weight: 600; }
 .feed-list { padding-bottom: 16px; }
 .announcement-card {
   display: flex; align-items: center; gap: 10px;

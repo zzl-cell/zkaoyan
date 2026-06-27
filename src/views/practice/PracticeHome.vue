@@ -1,6 +1,8 @@
 <template>
   <div class="practice-home">
-    <van-nav-bar title="练习" />
+    <div class="page-header">
+      <div class="header-title">练习</div>
+    </div>
 
     <!-- Data overview -->
     <div class="stats-card">
@@ -245,6 +247,10 @@ async function startMock() {
 
 <style scoped>
 .practice-home { min-height: 100vh; background: #f7f8fa; }
+.page-header {
+  display: flex; align-items: center; padding: 8px 16px; background: #fff;
+}
+.header-title { font-size: 16px; font-weight: 600; }
 .stats-card { margin: 12px 16px; background: #fff; border-radius: 12px; padding: 12px 0; }
 .stat-value { font-size: 20px; font-weight: bold; color: #1989fa; }
 .stat-label { font-size: 12px; color: #999; margin-top: 4px; }

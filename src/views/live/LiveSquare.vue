@@ -1,6 +1,8 @@
 <template>
   <div class="live-square">
-    <van-nav-bar title="直播" />
+    <div class="page-header">
+      <div class="header-title">直播</div>
+    </div>
 
     <!-- Tab 切换 -->
     <van-tabs v-model:active="activeTab" @change="onTabChange">
@@ -152,6 +154,11 @@ function goToRoom(room) {
 
 <style scoped>
 .live-square { min-height: 100vh; background: #f7f8fa; padding-bottom: 60px; }
+.page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 16px; background: #fff;
+}
+.header-title { font-size: 16px; font-weight: 600; }
 .live-card {
   margin: 12px 16px; border-radius: 12px; overflow: hidden;
   background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.08);

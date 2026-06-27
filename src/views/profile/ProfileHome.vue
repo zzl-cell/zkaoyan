@@ -1,8 +1,9 @@
 <template>
   <div class="profile-home">
-    <van-nav-bar title="我的">
-      <template #right><van-icon name="setting-o" size="20" @click="router.push('/profile/settings')" /></template>
-    </van-nav-bar>
+    <div class="page-header">
+      <div class="header-title">我的</div>
+      <van-icon name="setting-o" size="20" @click="router.push('/profile/settings')" />
+    </div>
 
     <!-- User card -->
     <div class="user-card" style="padding: 16px; display: flex; align-items: center; gap: 12px;" @click="router.push('/profile/edit')">
@@ -129,6 +130,11 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+.page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 16px; background: #fff;
+}
+.header-title { font-size: 16px; font-weight: 600; }
 .sign-banner {
   display: flex;
   align-items: center;
