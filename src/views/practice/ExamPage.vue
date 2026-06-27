@@ -305,6 +305,7 @@ import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { showConfirmDialog, showToast } from 'vant'
 import request from '../../api/request'
+import { playFeedback } from '../../utils/feedback'
 
 const router = useRouter()
 const route = useRoute()
@@ -513,7 +514,8 @@ function sprintSelectSingle(label) {
     const correct = currentQuestion.value.answer
     const isCorrect = label === correct
     sprintResults.value[qIdx] = isCorrect
-    if (!isCorrect) { vibrate(50); recordWrongAnswer(currentQuestion.value.question_id) }
+    playFeedback(isCorrect ? 'correct' : 'wrong')
+    if (!isCorrect) recordWrongAnswer(currentQuestion.value.question_id)
     return
   }
   selectedSingle.value = label
@@ -522,7 +524,8 @@ function sprintSelectSingle(label) {
   const isCorrect = label === correct
   sprintResults.value[qIdx] = isCorrect
   sprintShowFeedback.value = true
-  if (!isCorrect) { vibrate(50); recordWrongAnswer(currentQuestion.value.question_id) }
+  playFeedback(isCorrect ? 'correct' : 'wrong')
+  if (!isCorrect) recordWrongAnswer(currentQuestion.value.question_id)
 }
 
 function sprintToggleMulti(label) {
@@ -545,7 +548,7 @@ function sprintConfirmMulti() {
   const isCorrect = sorted.length > 0 && JSON.stringify(sorted) === JSON.stringify(correctArr)
   sprintResults.value[String(currentIndex.value + 1)] = isCorrect
   sprintShowFeedback.value = true
-  if (!isCorrect) vibrate(50)
+  playFeedback(isCorrect ? 'correct' : 'wrong')
 }
 
 // Sprint: skip multi confirm (allow moving without answering)
@@ -796,6 +799,10 @@ async function submitExam() {
     })
     scoreDetail.value = res.data.score_detail || {}
     submitted.value = true
+    // Play feedback based on score
+    const correctCount = res.data.correct_count || 0
+    const totalCount = res.data.total_count || 1
+    playFeedback(correctCount >= totalCount * 0.6 ? 'correct' : 'wrong')
     setTimeout(() => {
       router.replace(`/practice/result/${session.value.session_id}`)
     }, 1500)
