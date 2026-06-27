@@ -144,7 +144,7 @@ async function handleLoginPassword(db, env, { phone, password }) {
   const token = await generateToken({ user_id: user.user_id, phone }, env)
   return jsonOk('登录成功', {
     token,
-    user: { user_id: user.user_id, nickname: user.nickname, avatar: user.avatar, phone },
+    user: { user_id: user.user_id, nickname: user.nickname, avatar: user.avatar, phone, role: user.role || 'user' },
   })
 }
 
@@ -158,7 +158,7 @@ async function handleLoginSms(db, env, { phone, code }) {
   const token = await generateToken({ user_id: user.user_id, phone }, env)
   return jsonOk('登录成功', {
     token,
-    user: { user_id: user.user_id, nickname: user.nickname, avatar: user.avatar, phone },
+    user: { user_id: user.user_id, nickname: user.nickname, avatar: user.avatar, phone, role: user.role || 'user' },
   })
 }
 
