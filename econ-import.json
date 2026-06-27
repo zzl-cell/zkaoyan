@@ -1,0 +1,4226 @@
+{
+  "questions": [
+    {
+      "stem": "需求曲线是一条倾斜的曲线，其倾斜的方向为",
+      "options": [
+        {
+          "label": "A",
+          "content": "右下方"
+        },
+        {
+          "label": "B",
+          "content": "右上方"
+        },
+        {
+          "label": "C",
+          "content": "左下方"
+        },
+        {
+          "label": "D",
+          "content": "左上方"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_001"
+    },
+    {
+      "stem": "下列体现了需求规律的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "药品的价格上涨，使药品质量得到了提高"
+        },
+        {
+          "label": "B",
+          "content": "汽油的价格提高，小汽车的销售量减少"
+        },
+        {
+          "label": "C",
+          "content": "丝绸价格提高，游览公园的人数增加"
+        },
+        {
+          "label": "D",
+          "content": "照相机价格下降，导致销售量增加"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_002"
+    },
+    {
+      "stem": "其他因素保持不变，只是某种商品的价格下降，将产生什么样的结果",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求增加"
+        },
+        {
+          "label": "B",
+          "content": "需求减少"
+        },
+        {
+          "label": "C",
+          "content": "需求量增加"
+        },
+        {
+          "label": "D",
+          "content": "需求量减少"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_003"
+    },
+    {
+      "stem": "下列变化中，哪种变化不会导致需求曲线的位移",
+      "options": [
+        {
+          "label": "C",
+          "content": "消费者的收入"
+        },
+        {
+          "label": "D",
+          "content": "相关产品的价格"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_004"
+    },
+    {
+      "stem": "当汽油的价格上升时，在其他条件不变的情况下，对小汽车的需求量将",
+      "options": [
+        {
+          "label": "A",
+          "content": "减少"
+        },
+        {
+          "label": "B",
+          "content": "不变"
+        },
+        {
+          "label": "C",
+          "content": "增加"
+        },
+        {
+          "label": "D",
+          "content": "难以确定"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_005"
+    },
+    {
+      "stem": "当咖啡价格急剧升高时，在其他条件不变的情况下，对茶叶的需求量将",
+      "options": [
+        {
+          "label": "A",
+          "content": "减少"
+        },
+        {
+          "label": "B",
+          "content": "不变"
+        },
+        {
+          "label": "C",
+          "content": "增加"
+        },
+        {
+          "label": "D",
+          "content": "难以确定"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_006"
+    },
+    {
+      "stem": "消费者预期某种物品将来价格要上升，则对该物品当前的需求会",
+      "options": [
+        {
+          "label": "A",
+          "content": "减少"
+        },
+        {
+          "label": "B",
+          "content": "不变"
+        },
+        {
+          "label": "C",
+          "content": "增加"
+        },
+        {
+          "label": "D",
+          "content": "难以确定"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_007"
+    },
+    {
+      "stem": "需求的变动与需求量的变动",
+      "options": [
+        {
+          "label": "A",
+          "content": "都是由于一种原因引起的"
+        },
+        {
+          "label": "B",
+          "content": "需求的变动由价格以外的其他因素的变动所引起的，而需求量的变动由价格的变动引起的"
+        },
+        {
+          "label": "C",
+          "content": "需求量的变动是由一种因素引起的，需求变动是两种及两种以上的因素引起的"
+        },
+        {
+          "label": "D",
+          "content": "是一回事"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_008"
+    },
+    {
+      "stem": "整个需求曲线向右上方移动，表明",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求增加"
+        },
+        {
+          "label": "B",
+          "content": "需求减少"
+        },
+        {
+          "label": "C",
+          "content": "价格提高"
+        },
+        {
+          "label": "D",
+          "content": "价格下降"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_009"
+    },
+    {
+      "stem": "对化妆品的需求减少是指",
+      "options": [
+        {
+          "label": "A",
+          "content": "收入减少引起的减少"
+        },
+        {
+          "label": "B",
+          "content": "价格上升而引起的减少"
+        },
+        {
+          "label": "C",
+          "content": "需求量的减少"
+        },
+        {
+          "label": "D",
+          "content": "价格下降"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_010"
+    },
+    {
+      "stem": "在同一条曲线上，价格与需求量的组合从A点移动到B点是",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求的变动"
+        },
+        {
+          "label": "B",
+          "content": "收入的变动"
+        },
+        {
+          "label": "C",
+          "content": "偏好的改变"
+        },
+        {
+          "label": "D",
+          "content": "需求量的变动"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_011"
+    },
+    {
+      "stem": "导致需求曲线发生位移的原因是",
+      "options": [
+        {
+          "label": "A",
+          "content": "因价格变动，引起了需求量的变动"
+        },
+        {
+          "label": "B",
+          "content": "因供给曲线发生了位移，引起了需求量的变动"
+        },
+        {
+          "label": "C",
+          "content": "因影响需求量的非价格因素发生变动，而引起需求关系发生了变动"
+        },
+        {
+          "label": "D",
+          "content": "因社会经济因素发生变动引起产品价格的变动"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_012"
+    },
+    {
+      "stem": "下列因素中哪一种因素不会使需求曲线移动",
+      "options": [
+        {
+          "label": "A",
+          "content": "消费者收入变化"
+        },
+        {
+          "label": "B",
+          "content": "商品价格下降"
+        },
+        {
+          "label": "C",
+          "content": "其他商品价格下降"
+        },
+        {
+          "label": "D",
+          "content": "消费者偏好变化"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_013"
+    },
+    {
+      "stem": "供给曲线是一条倾斜的曲线，其倾斜的方向为",
+      "options": [
+        {
+          "label": "A",
+          "content": "右下方"
+        },
+        {
+          "label": "B",
+          "content": "右上方"
+        },
+        {
+          "label": "C",
+          "content": "左下方"
+        },
+        {
+          "label": "D",
+          "content": "左上方"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_014"
+    },
+    {
+      "stem": "鸡蛋的供给量增加是指供给量由于",
+      "options": [
+        {
+          "label": "A",
+          "content": "鸡蛋的需求量增加而引起的增加"
+        },
+        {
+          "label": "B",
+          "content": "人们对鸡蛋偏好的增加"
+        },
+        {
+          "label": "C",
+          "content": "鸡蛋的价格提高而引起的增加"
+        },
+        {
+          "label": "D",
+          "content": "由于收入的增加而引起的增加"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_015"
+    },
+    {
+      "stem": "如果某种商品供给曲线的斜率为正，保持其他条件不变的情况下，该商品价格上升，",
+      "options": [
+        {
+          "label": "A",
+          "content": "供给增加"
+        },
+        {
+          "label": "B",
+          "content": "供给减少"
+        },
+        {
+          "label": "C",
+          "content": "供给量增加"
+        },
+        {
+          "label": "D",
+          "content": "供给量减少"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_016"
+    },
+    {
+      "stem": "建筑工人工资提高将使",
+      "options": [
+        {
+          "label": "A",
+          "content": "新房子供给曲线左移并使房子价格上升"
+        },
+        {
+          "label": "B",
+          "content": "新房子供给曲线左移并使房子价格下降"
+        },
+        {
+          "label": "C",
+          "content": "新房子供给曲线右移并使房子价格上升"
+        },
+        {
+          "label": "D",
+          "content": "新房子供给曲线左移并使房子价格下降"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_017"
+    },
+    {
+      "stem": "假如生产某种商品所需原材料的价格上升，则这种商品",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求曲线向左方移动"
+        },
+        {
+          "label": "B",
+          "content": "供给曲线向左方移动"
+        },
+        {
+          "label": "C",
+          "content": "需求曲线向右方移动"
+        },
+        {
+          "label": "D",
+          "content": "供给曲线向右方移动"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_018"
+    },
+    {
+      "stem": "供给规律中可以反映在",
+      "options": [
+        {
+          "label": "A",
+          "content": "消费者不再喜欢消费某商品，使该商品的价格下降"
+        },
+        {
+          "label": "B",
+          "content": "政策鼓励某商品的生产，因而该商品的供给量增加"
+        },
+        {
+          "label": "C",
+          "content": "生产技术提高会使商品的供给量增加"
+        },
+        {
+          "label": "D",
+          "content": "某商品价格上升将导致对该商品的供给量增加"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_019"
+    },
+    {
+      "stem": "当供求原理发生作用时，粮食减产在市场上的作用是",
+      "options": [
+        {
+          "label": "A",
+          "content": "政府规定个人购买粮食的数量"
+        },
+        {
+          "label": "B",
+          "content": "粮食价格上升"
+        },
+        {
+          "label": "C",
+          "content": "粮食价格下降"
+        },
+        {
+          "label": "D",
+          "content": "粮食交易量增加"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_020"
+    },
+    {
+      "stem": "关于均衡价格的正确说法是",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡价格是需求等于供给时的价格"
+        },
+        {
+          "label": "B",
+          "content": "供给量等于需求量时的价格"
+        },
+        {
+          "label": "C",
+          "content": "供给曲线与需求曲线交点上的价格"
+        },
+        {
+          "label": "D",
+          "content": "供给价格等于需求价格时的价格"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_021"
+    },
+    {
+      "stem": "均衡价格随着",
+      "options": [
+        {
+          "label": "A",
+          "content": "供给和需求的增加而上升"
+        },
+        {
+          "label": "B",
+          "content": "供给和需求的减少而上升"
+        },
+        {
+          "label": "C",
+          "content": "需求的减少和供给的增加而上升"
+        },
+        {
+          "label": "D",
+          "content": "需求的增加和供给的减少而上升"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_022"
+    },
+    {
+      "stem": "当某种商品的需求和供给出现同时减少的情况时，那么",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡价格下降，均衡产量减少"
+        },
+        {
+          "label": "B",
+          "content": "均衡价格下降，均衡产量无法确定"
+        },
+        {
+          "label": "C",
+          "content": "均衡价格无法确定，均衡产量减少"
+        },
+        {
+          "label": "D",
+          "content": "均衡价格上升，均衡产量减少"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_023"
+    },
+    {
+      "stem": "已知某商品的需求函数和供给函数分别为：QD=14-3P，QS=2+6P,该商品的均衡价格是",
+      "options": [
+        {
+          "label": "A",
+          "content": "4/3"
+        },
+        {
+          "label": "B",
+          "content": "4/5"
+        },
+        {
+          "label": "C",
+          "content": "2/5"
+        },
+        {
+          "label": "D",
+          "content": "5/2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_024"
+    },
+    {
+      "stem": "假设某商品的需求曲线为Q=3-2P，市场上该商品的均衡价格为4，那么，当需求曲线变为Q=5-2P后，均衡价格将",
+      "options": [
+        {
+          "label": "A",
+          "content": "大于4"
+        },
+        {
+          "label": "B",
+          "content": "小于4"
+        },
+        {
+          "label": "C",
+          "content": "等于4"
+        },
+        {
+          "label": "D",
+          "content": "小于或等于4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_025"
+    },
+    {
+      "stem": "需求的变动引起",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡价格和均衡数量同方向变动"
+        },
+        {
+          "label": "B",
+          "content": "均衡价格反方向变动，均衡数量同方向变动"
+        },
+        {
+          "label": "C",
+          "content": "均衡价格与均衡数量反方向变动"
+        },
+        {
+          "label": "D",
+          "content": "均衡价格同方向变动，均衡数量反方向变动"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_026"
+    },
+    {
+      "stem": "供给的变动引起",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡价格和均衡数量同方向变动"
+        },
+        {
+          "label": "B",
+          "content": "均衡价格反方向变动，均衡数量同方向变动"
+        },
+        {
+          "label": "C",
+          "content": "均衡价格与均衡数量反方向变动"
+        },
+        {
+          "label": "D",
+          "content": "均衡价格同方向变动，均衡数量反方向变动"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_027"
+    },
+    {
+      "stem": "政府为了扶植农产品，规定了高于均衡价格的支持价格。为此政府应采取的措施是",
+      "options": [
+        {
+          "label": "A",
+          "content": "增加农产品的税收"
+        },
+        {
+          "label": "B",
+          "content": "实行农产品配给制"
+        },
+        {
+          "label": "C",
+          "content": "收购过剩的农产品"
+        },
+        {
+          "label": "D",
+          "content": "对农产品生产者给予补贴"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_028"
+    },
+    {
+      "stem": "政府把价格限制在均衡价格以下，可能导致",
+      "options": [
+        {
+          "label": "A",
+          "content": "黑市交易"
+        },
+        {
+          "label": "B",
+          "content": "大量积压"
+        },
+        {
+          "label": "C",
+          "content": "买者按低价买到希望购买的商品数量"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_029"
+    },
+    {
+      "stem": "在下列价格弹性的表达中，正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求量变动对价格变动的反应程度"
+        },
+        {
+          "label": "B",
+          "content": "价格变动的绝对值对需求量变动的绝对值的影响"
+        },
+        {
+          "label": "C",
+          "content": "价格的变动量除以需求的变动量"
+        },
+        {
+          "label": "D",
+          "content": "需求的变动量除以价格的变动量"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_030"
+    },
+    {
+      "stem": "下列哪一种商品的价格弹性最大",
+      "options": [
+        {
+          "label": "A",
+          "content": "面粉"
+        },
+        {
+          "label": "B",
+          "content": "大白菜"
+        },
+        {
+          "label": "C",
+          "content": "手表"
+        },
+        {
+          "label": "D",
+          "content": "化妆品"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_031"
+    },
+    {
+      "stem": "若某商品价格上升2%，其需求量下降10%，则该商品的需求的价格弹性是",
+      "options": [
+        {
+          "label": "A",
+          "content": "缺乏弹性"
+        },
+        {
+          "label": "B",
+          "content": "富有弹性"
+        },
+        {
+          "label": "C",
+          "content": "单位弹性"
+        },
+        {
+          "label": "D",
+          "content": "无限弹性"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_032"
+    },
+    {
+      "stem": "如果某商品是富有需求的价格弹性，则该商品价格上升",
+      "options": [
+        {
+          "label": "A",
+          "content": "销售收益增加"
+        },
+        {
+          "label": "B",
+          "content": "销售收益不变"
+        },
+        {
+          "label": "C",
+          "content": "销售收益下降"
+        },
+        {
+          "label": "D",
+          "content": "销售收益可能上升也可能下降"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_033"
+    },
+    {
+      "stem": "如果价格下降20%能使买者总支出增加2%，则该商品的需求量对价格",
+      "options": [
+        {
+          "label": "A",
+          "content": "富有弹性"
+        },
+        {
+          "label": "B",
+          "content": "具有单位弹性"
+        },
+        {
+          "label": "C",
+          "content": "缺乏弹性"
+        },
+        {
+          "label": "D",
+          "content": "无法确定"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_034"
+    },
+    {
+      "stem": "什么情况下应采取薄利多销政策",
+      "options": [
+        {
+          "label": "A",
+          "content": "价格弹性小于1时"
+        },
+        {
+          "label": "B",
+          "content": "价格弹性大于1时"
+        },
+        {
+          "label": "C",
+          "content": "收入弹性大于1时"
+        },
+        {
+          "label": "D",
+          "content": "任何时候都应薄利多销"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_035"
+    },
+    {
+      "stem": "下列产品中，哪种产品的交叉弹性为负值",
+      "options": [
+        {
+          "label": "A",
+          "content": "汽车和轮胎"
+        },
+        {
+          "label": "B",
+          "content": "花生油和豆油"
+        },
+        {
+          "label": "C",
+          "content": "棉布和化纤布"
+        },
+        {
+          "label": "D",
+          "content": "大米和面粉"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_036"
+    },
+    {
+      "stem": "如果Y的价格上升，对替代品X的影响是",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求量增加"
+        },
+        {
+          "label": "B",
+          "content": "需求量减少"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_037"
+    },
+    {
+      "stem": "劣质品需求的收入弹性为",
+      "options": [
+        {
+          "label": "A",
+          "content": "正"
+        },
+        {
+          "label": "B",
+          "content": "负"
+        },
+        {
+          "label": "C",
+          "content": "零"
+        },
+        {
+          "label": "D",
+          "content": "难以确定"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_038"
+    },
+    {
+      "stem": "满足需求的条件包括",
+      "options": [
+        {
+          "label": "A",
+          "content": "满足全家人的欲望"
+        },
+        {
+          "label": "B",
+          "content": "愿意购买"
+        },
+        {
+          "label": "C",
+          "content": "满足心理要求"
+        },
+        {
+          "label": "D",
+          "content": "有能力购买"
+        }
+      ],
+      "answer": "BD",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_039"
+    },
+    {
+      "stem": "影响需求量的因素包括",
+      "options": [
+        {
+          "label": "A",
+          "content": "价格"
+        },
+        {
+          "label": "B",
+          "content": "质量"
+        },
+        {
+          "label": "C",
+          "content": "收入"
+        },
+        {
+          "label": "D",
+          "content": "个人偏好"
+        }
+      ],
+      "answer": "ACDE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_040"
+    },
+    {
+      "stem": "需求定理是指",
+      "options": [
+        {
+          "label": "A",
+          "content": "商品价格提高，对该商品的需求量减少"
+        },
+        {
+          "label": "B",
+          "content": "商品价格提高，对该商品的需求量增加"
+        },
+        {
+          "label": "C",
+          "content": "商品价格下降，对该商品的需求量增加"
+        },
+        {
+          "label": "D",
+          "content": "商品价格下降，对该商品的需求量减少"
+        }
+      ],
+      "answer": "ACE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_041"
+    },
+    {
+      "stem": "影响供给量的因素有",
+      "options": [
+        {
+          "label": "A",
+          "content": "价格"
+        },
+        {
+          "label": "B",
+          "content": "质量"
+        },
+        {
+          "label": "C",
+          "content": "成本"
+        },
+        {
+          "label": "D",
+          "content": "自然条件"
+        },
+        {
+          "label": "E",
+          "content": "政府的政策"
+        }
+      ],
+      "answer": "ACDE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_042"
+    },
+    {
+      "stem": "供给定理是指",
+      "options": [
+        {
+          "label": "A",
+          "content": "商品价格提高，对该商品的供给量减少"
+        },
+        {
+          "label": "B",
+          "content": "商品价格提高，对该商品的供给量增加"
+        },
+        {
+          "label": "C",
+          "content": "商品价格下降，对该商品的供给量增加"
+        },
+        {
+          "label": "D",
+          "content": "商品价格下降，对该商品的供给量减少"
+        }
+      ],
+      "answer": "BDE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_043"
+    },
+    {
+      "stem": "某种商品的供给曲线的移动是由于",
+      "options": [
+        {
+          "label": "A",
+          "content": "商品价格的变化"
+        },
+        {
+          "label": "B",
+          "content": "互补品价格的变化"
+        },
+        {
+          "label": "C",
+          "content": "生产技术条件的变化"
+        },
+        {
+          "label": "D",
+          "content": "产量的变化"
+        }
+      ],
+      "answer": "BCE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_044"
+    },
+    {
+      "stem": "均衡价格就是",
+      "options": [
+        {
+          "label": "A",
+          "content": "供给量等于需求量时的价格"
+        },
+        {
+          "label": "B",
+          "content": "供给价格等于需求价格，同时供给量也等于需求量时的价格"
+        },
+        {
+          "label": "C",
+          "content": "供给曲线与需求曲线交点时的价格"
+        },
+        {
+          "label": "D",
+          "content": "供给等于需求时的价格"
+        }
+      ],
+      "answer": "BC",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_045"
+    },
+    {
+      "stem": "政府对商品的调节通过价格进行，其对价格实施",
+      "options": [
+        {
+          "label": "A",
+          "content": "政府直接定价"
+        },
+        {
+          "label": "B",
+          "content": "指导价"
+        },
+        {
+          "label": "C",
+          "content": "支持价格"
+        },
+        {
+          "label": "D",
+          "content": "建议价"
+        },
+        {
+          "label": "E",
+          "content": "限制价格"
+        }
+      ],
+      "answer": "CE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_046"
+    },
+    {
+      "stem": "需求的变动引起",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡价格同方向变动"
+        },
+        {
+          "label": "B",
+          "content": "均衡价格反方向变动"
+        },
+        {
+          "label": "C",
+          "content": "均衡数量同方向变动"
+        },
+        {
+          "label": "D",
+          "content": "均衡数量反方向变动"
+        }
+      ],
+      "answer": "AC",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_047"
+    },
+    {
+      "stem": "供给的变动引起",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡价格同方向变动"
+        },
+        {
+          "label": "B",
+          "content": "均衡价格反方向变动"
+        },
+        {
+          "label": "C",
+          "content": "均衡数量同方向变动"
+        },
+        {
+          "label": "D",
+          "content": "均衡数量反方向变动"
+        }
+      ],
+      "answer": "BC",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_048"
+    },
+    {
+      "stem": "影响需求价格弹性的因素有",
+      "options": [
+        {
+          "label": "A",
+          "content": "购买欲望"
+        },
+        {
+          "label": "B",
+          "content": "商品的可替代程度"
+        },
+        {
+          "label": "C",
+          "content": "用途的广泛性"
+        },
+        {
+          "label": "D",
+          "content": "商品的价格"
+        },
+        {
+          "label": "E",
+          "content": "商品的使用时间"
+        }
+      ],
+      "answer": "ABCE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_049"
+    },
+    {
+      "stem": "影响供给弹性的因素有",
+      "options": [
+        {
+          "label": "A",
+          "content": "生产的难易程度"
+        },
+        {
+          "label": "B",
+          "content": "生产要素的供给弹性"
+        },
+        {
+          "label": "C",
+          "content": "生产技术"
+        },
+        {
+          "label": "D",
+          "content": "商品的价格"
+        },
+        {
+          "label": "E",
+          "content": "难易保管"
+        }
+      ],
+      "answer": "ABCE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_050"
+    },
+    {
+      "stem": "下列弹性的表达中，正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求价格弹性是需求量变动对价格变动的敏感程度"
+        },
+        {
+          "label": "B",
+          "content": "需求价格弹性等于需求的变动量除以价格的变动量"
+        },
+        {
+          "label": "C",
+          "content": "收入弹性描述的是收入与价格的关系"
+        },
+        {
+          "label": "D",
+          "content": "收入弹性描述的是收入与需求量的关系"
+        }
+      ],
+      "answer": "ADE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_051"
+    },
+    {
+      "stem": "以下关于需求价格弹性大小的论述，正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "如果需求曲线是一条直线，则直线上各点的需求弹性相等"
+        },
+        {
+          "label": "B",
+          "content": "如果需求曲线是一条直线，则直线上各点的需求弹性不相等"
+        },
+        {
+          "label": "C",
+          "content": "如果需求曲线是一条直线，则直线上越往左上方的点需求弹性越大"
+        },
+        {
+          "label": "D",
+          "content": "如果需求曲线是一条曲线，则曲线上各点的需求弹性相等"
+        }
+      ],
+      "answer": "BC",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_052"
+    },
+    {
+      "stem": "以下关于需求价格弹性大小与销售收入的论述中，正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求弹性越大，销售收入越大"
+        },
+        {
+          "label": "B",
+          "content": "如果商品富有弹性，则降价可以扩大销售收入"
+        },
+        {
+          "label": "C",
+          "content": "如果商品缺乏弹性，则降价可以扩大销售收入"
+        },
+        {
+          "label": "D",
+          "content": "如果商品富有弹性，则降价可以提高利润"
+        }
+      ],
+      "answer": "BE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_053"
+    },
+    {
+      "stem": "关于收入弹性的论述中，正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "收入弹性就是消费者收入变化对某种商品需求量的影响"
+        },
+        {
+          "label": "B",
+          "content": "所有商品的收入弹性都是正值"
+        },
+        {
+          "label": "C",
+          "content": "如果收入弹性小于零，表示这种商品是低档商品"
+        },
+        {
+          "label": "D",
+          "content": "从宏观上来说，如果某类商品收入弹性小于1，说明人们对这类商品需求的增长速"
+        }
+      ],
+      "answer": "ACDE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_054"
+    },
+    {
+      "stem": "关于交叉弹性，正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "交叉弹性可能是正值，也可能是负值"
+        },
+        {
+          "label": "B",
+          "content": "如果交叉弹性是正值，说明这两种商品是互补品"
+        },
+        {
+          "label": "C",
+          "content": "如果交叉弹性是正值，说明这两种商品是替代品"
+        },
+        {
+          "label": "D",
+          "content": "如果交叉弹性是负值，说明这两种商品是互补品"
+        }
+      ],
+      "answer": "ACD",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_055"
+    },
+    {
+      "stem": "需求量变化与需求变化的含义是相同的。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_056"
+    },
+    {
+      "stem": "需求的变动是指商品本身价格变动所引起的该商品的需求数量的变动。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_057"
+    },
+    {
+      "stem": "当消费者的收入发生变化时，会引起需求曲线的移动。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_058"
+    },
+    {
+      "stem": "生产者预期某商品未来价格要下降，就会减少该商品当前的供给。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_059"
+    },
+    {
+      "stem": "在几何图形上，供给量的变动表现为商品的价格-供给量组合点沿着同一条既定的供给曲线运动。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_060"
+    },
+    {
+      "stem": "任何情况下商品的需求量与价格都是反方向变化的。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_061"
+    },
+    {
+      "stem": "均衡价格一定是供给曲线与需求曲线交点时的价格。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_062"
+    },
+    {
+      "stem": "限制价格应高于市场价格，支持价格应低于市场价格。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_063"
+    },
+    {
+      "stem": "如果一般性商品的价格高于均衡价格，那该价格一定会下跌并向均衡价格靠拢。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_064"
+    },
+    {
+      "stem": "假定其他条件不变，某种商品价格的变化将导致它的供给量变化，但不会引起供给的变化。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_065"
+    },
+    {
+      "stem": "供给曲线右移表示生产者在每一种价格上提供更多的产品。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_066"
+    },
+    {
+      "stem": "如果价格和总收益呈同方向变化，则需求是缺乏弹性的。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_067"
+    },
+    {
+      "stem": "富有弹性的商品涨价总收益增加。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_068"
+    },
+    {
+      "stem": "如果商品缺乏弹性，如果要扩大销售收入，则要提高价格。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_069"
+    },
+    {
+      "stem": "已知某商品的收入弹性小于1，则这种商品是奢侈品。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_070"
+    },
+    {
+      "stem": "已知某两种商品的交叉弹性大于0，则这两种商品是替代品。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_071"
+    },
+    {
+      "stem": "当某种商品的价格上升时，其互补商品的需求将上升。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_072"
+    },
+    {
+      "stem": "下列对物品边际效用的不正确理解是",
+      "options": [
+        {
+          "label": "A",
+          "content": "每增加（减少）一个单位的对物品的消费所引起的总效用的增（减）量"
+        },
+        {
+          "label": "B",
+          "content": "最后增加的那个单位的消费所提供的效用"
+        },
+        {
+          "label": "C",
+          "content": "消费一定数量的某种物品所获得总效用"
+        },
+        {
+          "label": "D",
+          "content": "数学表达式为MU=△TU/△Q（TU表示总效用，Q表示物品数量）"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_073"
+    },
+    {
+      "stem": "某消费者逐渐增加某种商品的消费量，直到达到了效用最大化，在这个过程中，该商品的",
+      "options": [
+        {
+          "label": "A",
+          "content": "总效用和边际效用不断增加"
+        },
+        {
+          "label": "B",
+          "content": "总效用不断下降，边际效用不断增加"
+        },
+        {
+          "label": "C",
+          "content": "总效用不断增加，边际效用不断下降"
+        },
+        {
+          "label": "D",
+          "content": "总效用和边际效用不断下降"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_074"
+    },
+    {
+      "stem": "总效用曲线达到顶点时",
+      "options": [
+        {
+          "label": "A",
+          "content": "边际效用曲线达到最大点"
+        },
+        {
+          "label": "B",
+          "content": "边际效用为零"
+        },
+        {
+          "label": "C",
+          "content": "边际效用为正"
+        },
+        {
+          "label": "D",
+          "content": "边际效用为负"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_075"
+    },
+    {
+      "stem": "边际效用随着消费量的增加而",
+      "options": [
+        {
+          "label": "A",
+          "content": "递减"
+        },
+        {
+          "label": "B",
+          "content": "递增"
+        },
+        {
+          "label": "C",
+          "content": "不变"
+        },
+        {
+          "label": "D",
+          "content": "先增后减"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_076"
+    },
+    {
+      "stem": "如果消费者消费15个面包获得的总效用是100个效用单位，消费16个面包获得的总效用是106个效用单位，则第16个面包的边际效用是",
+      "options": [
+        {
+          "label": "A",
+          "content": "108个"
+        },
+        {
+          "label": "B",
+          "content": "100个"
+        },
+        {
+          "label": "C",
+          "content": "106个"
+        },
+        {
+          "label": "D",
+          "content": "6个"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_077"
+    },
+    {
+      "stem": "消费者剩余是指消费者购买某种商品时，从消费中得到的（B ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "满足程度"
+        },
+        {
+          "label": "B",
+          "content": "满足程度超过他实际支付的价格部分"
+        },
+        {
+          "label": "C",
+          "content": "边际效用"
+        },
+        {
+          "label": "D",
+          "content": "满足程度小于他实际支付的价格部分"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_078"
+    },
+    {
+      "stem": "消费者剩余是消费者的",
+      "options": [
+        {
+          "label": "A",
+          "content": "实际所得"
+        },
+        {
+          "label": "B",
+          "content": "主观感受"
+        },
+        {
+          "label": "C",
+          "content": "没有购买的部分"
+        },
+        {
+          "label": "D",
+          "content": "消费剩余部分"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_079"
+    },
+    {
+      "stem": "已知某家庭的总效用方程为TU=14Q-Q2，Q为消费商品数量，该家庭获得最大效用时的商品数量为",
+      "options": [
+        {
+          "label": "A",
+          "content": "49"
+        },
+        {
+          "label": "B",
+          "content": "7"
+        },
+        {
+          "label": "C",
+          "content": "14"
+        },
+        {
+          "label": "D",
+          "content": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_080"
+    },
+    {
+      "stem": "一般来说，无差异曲线的形状是",
+      "options": [
+        {
+          "label": "A",
+          "content": "向右上方倾斜的曲线"
+        },
+        {
+          "label": "B",
+          "content": "向右下方倾斜的曲线"
+        },
+        {
+          "label": "C",
+          "content": "是一条垂线"
+        },
+        {
+          "label": "D",
+          "content": "是一条水平线"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_081"
+    },
+    {
+      "stem": "无差异曲线的特征包括（    ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "任意两条无差异曲线可以相交"
+        },
+        {
+          "label": "B",
+          "content": "一般来说无差异曲线具有负斜率"
+        },
+        {
+          "label": "C",
+          "content": "一般来说无差异曲线具有正斜率"
+        },
+        {
+          "label": "D",
+          "content": "任意两条无差异曲线不能相交"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_082"
+    },
+    {
+      "stem": "在同一个平面图上有",
+      "options": [
+        {
+          "label": "A",
+          "content": "三条无差异曲线"
+        },
+        {
+          "label": "B",
+          "content": "无数条无差异曲线"
+        },
+        {
+          "label": "C",
+          "content": "许多但数量有限的无差异曲线"
+        },
+        {
+          "label": "D",
+          "content": "二条无差异曲线"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_083"
+    },
+    {
+      "stem": "在一条无差异曲线上",
+      "options": [
+        {
+          "label": "A",
+          "content": "消费X获得的总效用等于消费Y获得的总效用"
+        },
+        {
+          "label": "B",
+          "content": "消费X获得的边际效用等于消费Y获得的边际效用"
+        },
+        {
+          "label": "C",
+          "content": "曲线上任两点对应的消费品组合所能带来的边际效用相等"
+        },
+        {
+          "label": "D",
+          "content": "曲线上任两点对应的消费品组合所能带来的总效用相等"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_084"
+    },
+    {
+      "stem": "无差异曲线上任一点上商品X和Y的边际替代率等于它们的",
+      "options": [
+        {
+          "label": "A",
+          "content": "价格之比"
+        },
+        {
+          "label": "B",
+          "content": "数量之比"
+        },
+        {
+          "label": "C",
+          "content": "边际效用之比"
+        },
+        {
+          "label": "D",
+          "content": "边际成本之比"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_085"
+    },
+    {
+      "stem": "同一条无差异曲线上的不同点表示",
+      "options": [
+        {
+          "label": "A",
+          "content": "效用水平不同，但所消费的两种商品组合比例相同"
+        },
+        {
+          "label": "B",
+          "content": "效用水平相同，但所消费的两种商品的组合比例不同"
+        },
+        {
+          "label": "C",
+          "content": "效用水平不同，两种商品的组合比例也不相同"
+        },
+        {
+          "label": "D",
+          "content": "效用水平相同，两种商品的组合比例也相同"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_086"
+    },
+    {
+      "stem": "预算线上的点表明",
+      "options": [
+        {
+          "label": "A",
+          "content": "没有用完预算支出"
+        },
+        {
+          "label": "B",
+          "content": "处于均衡状态"
+        },
+        {
+          "label": "C",
+          "content": "预算支出条件下的最大可能数量组合"
+        },
+        {
+          "label": "D",
+          "content": "状态不可能确定"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_087"
+    },
+    {
+      "stem": "预算线的位置和斜率取决于",
+      "options": [
+        {
+          "label": "A",
+          "content": "消费者的收入"
+        },
+        {
+          "label": "B",
+          "content": "商品的价格"
+        },
+        {
+          "label": "C",
+          "content": "消费者的收入和商品的价格"
+        },
+        {
+          "label": "D",
+          "content": "以上都不正确"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_088"
+    },
+    {
+      "stem": "M=Px·X+Py·Y是消费者的",
+      "options": [
+        {
+          "label": "A",
+          "content": "需求函数"
+        },
+        {
+          "label": "B",
+          "content": "效用函数"
+        },
+        {
+          "label": "C",
+          "content": "预算约束条件方程"
+        },
+        {
+          "label": "D",
+          "content": "不确定函数"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_089"
+    },
+    {
+      "stem": "消费者效用最大化的点必定落在",
+      "options": [
+        {
+          "label": "A",
+          "content": "预算线右侧区域"
+        },
+        {
+          "label": "B",
+          "content": "预算线左侧区域"
+        },
+        {
+          "label": "C",
+          "content": "预算线上"
+        },
+        {
+          "label": "D",
+          "content": "预算线上和左侧区域"
+        }
+      ],
+      "answer": "C",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_090"
+    },
+    {
+      "stem": "关于实现消费者均衡的条件，不正确的是",
+      "options": [
+        {
+          "label": "A",
+          "content": "在基数效用论下，商品的边际效用之比等于其价格之比"
+        },
+        {
+          "label": "B",
+          "content": "在基数效用论下，两种商品的边际替代率等于其价格之比"
+        },
+        {
+          "label": "C",
+          "content": "基数效用论与序数效用论的均衡条件实质上是相同的"
+        },
+        {
+          "label": "D",
+          "content": "均衡状态下，消费者增加一种商品的数量所带来的效用增加量必定大于减少的另一种商品所带来的效用减少量"
+        }
+      ],
+      "answer": "D",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_091"
+    },
+    {
+      "stem": "根据无差异曲线分析，消费者均衡是",
+      "options": [
+        {
+          "label": "A",
+          "content": "无差异曲线与预算线的相切之点"
+        },
+        {
+          "label": "B",
+          "content": "无差异曲线与预算线的相交之点"
+        },
+        {
+          "label": "C",
+          "content": "离原点最远的无差异曲线上的任何一点"
+        },
+        {
+          "label": "D",
+          "content": "离原点最近的预算线上的任何一点"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_092"
+    },
+    {
+      "stem": "随着消费商品数量的增加",
+      "options": [
+        {
+          "label": "A",
+          "content": "边际效用递减"
+        },
+        {
+          "label": "B",
+          "content": "边际效用总大于零"
+        },
+        {
+          "label": "C",
+          "content": "边际效用会小于零"
+        },
+        {
+          "label": "D",
+          "content": "每单位商品增加的总效用减少"
+        }
+      ],
+      "answer": "AC",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_093"
+    },
+    {
+      "stem": "总效用和边际效用的关系",
+      "options": [
+        {
+          "label": "A",
+          "content": "当边际效用为零时，总效用最大"
+        },
+        {
+          "label": "B",
+          "content": "当边际效用为零时，总效用递增"
+        },
+        {
+          "label": "C",
+          "content": "当边际效用为负时，总效用递减"
+        },
+        {
+          "label": "D",
+          "content": "当边际效用为负时，总效用不变"
+        }
+      ],
+      "answer": "ACE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_094"
+    },
+    {
+      "stem": "商品的边际替代率",
+      "options": [
+        {
+          "label": "A",
+          "content": "是正的"
+        },
+        {
+          "label": "B",
+          "content": "是负的"
+        },
+        {
+          "label": "C",
+          "content": "具有递减的趋势"
+        },
+        {
+          "label": "D",
+          "content": "等于该两种商品的边际效用之比"
+        }
+      ],
+      "answer": "BCDE",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_095"
+    },
+    {
+      "stem": "关于消费者均衡点的下列看法正确的有",
+      "options": [
+        {
+          "label": "A",
+          "content": "均衡点位于预算线上"
+        },
+        {
+          "label": "B",
+          "content": "消费者均衡点在理论上可以脱离预算线而存在"
+        },
+        {
+          "label": "C",
+          "content": "均衡点由预算线和无差异曲线的切点决定"
+        },
+        {
+          "label": "D",
+          "content": "在消费者均衡点上，预算线与无差异曲线斜率相等但符号相反"
+        }
+      ],
+      "answer": "AC",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_096"
+    },
+    {
+      "stem": "因为边际效用递减，所以一般商品的需求曲线向右下方倾斜。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_097"
+    },
+    {
+      "stem": "当消费某种物品的边际效用为负时，则总效用达极大值。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_098"
+    },
+    {
+      "stem": "当边际效用减少时，总效用也是减少的。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_099"
+    },
+    {
+      "stem": "需求量和商品的价格成反方向变化是由边际效用递减规律决定的。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_100"
+    },
+    {
+      "stem": "消费者均衡就是消费者获得了最大边际效用。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_101"
+    },
+    {
+      "stem": "消费者剩余是指消费者所获得的边际效用最大。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_102"
+    },
+    {
+      "stem": "在同一条无差异曲线上，任意两点对应的两种商品不同数量组合所能带来的边际效用相等。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_103"
+    },
+    {
+      "stem": "生产者为了生产一定数量的产品所放弃的使用相同的生产要素在其它生产用途中所得到的最高收入，这一成本定义是指（    C ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "会计成本"
+        },
+        {
+          "label": "B",
+          "content": "隐成本"
+        },
+        {
+          "label": "C",
+          "content": "机会成本"
+        },
+        {
+          "label": "D",
+          "content": "边际成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_104"
+    },
+    {
+      "stem": "正常利润（   A  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "是经济成本的一部分"
+        },
+        {
+          "label": "B",
+          "content": "是经济利润的一部分"
+        },
+        {
+          "label": "C",
+          "content": "不是经济成本的一部分"
+        },
+        {
+          "label": "D",
+          "content": "与企业决策不相关"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_105"
+    },
+    {
+      "stem": "不随着产量变动而变动的成本称为（   B ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "平均成本"
+        },
+        {
+          "label": "B",
+          "content": "固定成本"
+        },
+        {
+          "label": "C",
+          "content": "长期成本"
+        },
+        {
+          "label": "D",
+          "content": "总成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_106"
+    },
+    {
+      "stem": "在长期中，下列成本中哪一项是不存在的（   A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "固定成本"
+        },
+        {
+          "label": "B",
+          "content": "机会成本"
+        },
+        {
+          "label": "C",
+          "content": "平均成本"
+        },
+        {
+          "label": "D",
+          "content": "隐成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_107"
+    },
+    {
+      "stem": "随着产量的增加，平均固定成本（  B  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "在开始时减少，然后趋于增加"
+        },
+        {
+          "label": "B",
+          "content": "一直趋于减少"
+        },
+        {
+          "label": "C",
+          "content": "一直趋于增加"
+        },
+        {
+          "label": "D",
+          "content": "在开始时增加，然后趋于减少"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_108"
+    },
+    {
+      "stem": "固定成本是指（      A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "厂商在短期内必须支付的不能调整的生产要素的费用"
+        },
+        {
+          "label": "B",
+          "content": "厂商要增加产量所要增加的费用"
+        },
+        {
+          "label": "C",
+          "content": "厂商购进生产要素时所要支付的费用"
+        },
+        {
+          "label": "D",
+          "content": "厂商在短期内必须支付的可能调整的生产要素的费用"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_109"
+    },
+    {
+      "stem": "收益是指（   A  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "成本加利润"
+        },
+        {
+          "label": "B",
+          "content": "成本"
+        },
+        {
+          "label": "C",
+          "content": "利润"
+        },
+        {
+          "label": "D",
+          "content": "利润减成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_110"
+    },
+    {
+      "stem": "平均收益是指（  C   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "厂商销售一定产品所得的全部收入"
+        },
+        {
+          "label": "B",
+          "content": "每增加一单位产品所增加的销售收入"
+        },
+        {
+          "label": "C",
+          "content": "厂商销售单位产品所获得的收入"
+        },
+        {
+          "label": "D",
+          "content": "总收益与边际收益的差额"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_111"
+    },
+    {
+      "stem": "利润最大化的原则是（  C  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "边际收益大于边际成本"
+        },
+        {
+          "label": "B",
+          "content": "边际收益小于边际成本"
+        },
+        {
+          "label": "C",
+          "content": "边际收益等于边际成本"
+        },
+        {
+          "label": "D",
+          "content": "边际收益于边际成本没有关系"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_112"
+    },
+    {
+      "stem": "如果边际收益大于边际成本，那么减少产量就会使（   A）",
+      "options": [
+        {
+          "label": "A",
+          "content": "总利润减少"
+        },
+        {
+          "label": "B",
+          "content": "总利润增加"
+        },
+        {
+          "label": "C",
+          "content": "对利润无影响"
+        },
+        {
+          "label": "D",
+          "content": "使单位利润减少"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_113"
+    },
+    {
+      "stem": "对于一种可变生产要素的生产函数而言，当总产量达到最大值而开始递减时，边际产量处于（   A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "递减且边际产量小于零"
+        },
+        {
+          "label": "B",
+          "content": "递减但是边际产量大于零"
+        },
+        {
+          "label": "C",
+          "content": "边际产量等于零"
+        },
+        {
+          "label": "D",
+          "content": "无法确定边际产量值"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_114"
+    },
+    {
+      "stem": "当平均产量达到最大值时（   B）",
+      "options": [
+        {
+          "label": "A",
+          "content": "总产量达到最大值"
+        },
+        {
+          "label": "B",
+          "content": "总产量仍处于上升阶段，还未达到最大值"
+        },
+        {
+          "label": "C",
+          "content": "边际产量达到最大值"
+        },
+        {
+          "label": "D",
+          "content": "边际产量等于零"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_115"
+    },
+    {
+      "stem": "当边际产量达到最大时，下列各项中正确的是（ C ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "总产量达到最大值"
+        },
+        {
+          "label": "B",
+          "content": "平均产量处于递减阶段"
+        },
+        {
+          "label": "C",
+          "content": "平均产量处于递增阶段"
+        },
+        {
+          "label": "D",
+          "content": "总产量处于递减阶段"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_116"
+    },
+    {
+      "stem": "产量为4时，总收益为100；当产量为5时，总收益为120，此时边际收益为（ A）",
+      "options": [
+        {
+          "label": "A",
+          "content": "20"
+        },
+        {
+          "label": "B",
+          "content": "100"
+        },
+        {
+          "label": "C",
+          "content": "120"
+        },
+        {
+          "label": "D",
+          "content": "25"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_117"
+    },
+    {
+      "stem": "当劳动的总产量达到最大值时（  C  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "平均产量是递减的"
+        },
+        {
+          "label": "B",
+          "content": "平均产量为零"
+        },
+        {
+          "label": "C",
+          "content": "边际产量为零"
+        },
+        {
+          "label": "D",
+          "content": "边际产量为负"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_118"
+    },
+    {
+      "stem": "如果连续地增加某种生产要素，在总产量达到最大时，边际产量曲线（  C ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "与纵轴相交"
+        },
+        {
+          "label": "B",
+          "content": "经过原点"
+        },
+        {
+          "label": "C",
+          "content": "与横轴相交"
+        },
+        {
+          "label": "D",
+          "content": "与平均产量曲线相交"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_119"
+    },
+    {
+      "stem": "当边际产量大于平均产量时，（     A）",
+      "options": [
+        {
+          "label": "A",
+          "content": "平均产量增加"
+        },
+        {
+          "label": "B",
+          "content": "生产技术水平不变"
+        },
+        {
+          "label": "C",
+          "content": "平均产量不变"
+        },
+        {
+          "label": "D",
+          "content": "平均产量达到最低点"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_120"
+    },
+    {
+      "stem": "下列说法中错误的一种说法是（  B  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "只要总产量减少，边际产量一定是负数"
+        },
+        {
+          "label": "B",
+          "content": "只要边际产量减少，总产量一定也减少"
+        },
+        {
+          "label": "C",
+          "content": "边际产量曲线一定在平均产量曲线的最高点与之相交"
+        },
+        {
+          "label": "D",
+          "content": "随着某种生产要素投入量的增加，边际产量和平均产量增加到一定程度将趋于下降，其中边际产量的下降一定先于平均产量"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_121"
+    },
+    {
+      "stem": "如图所示，厂商的理性决策应在（ B    ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "3＜L＜8"
+        },
+        {
+          "label": "B",
+          "content": "5＜L＜8"
+        },
+        {
+          "label": "C",
+          "content": "3＜L＜5"
+        },
+        {
+          "label": "D",
+          "content": "0＜L＜5"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_122"
+    },
+    {
+      "stem": "当劳动的边际产量为负时，生产处于（  C   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "劳动投入的第I阶段"
+        },
+        {
+          "label": "B",
+          "content": "劳动投入的第II阶段"
+        },
+        {
+          "label": "C",
+          "content": "劳动投入的第III阶段"
+        },
+        {
+          "label": "D",
+          "content": "资本投入的第I阶段"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_123"
+    },
+    {
+      "stem": "根据边际收益递减规律，如果技术不变，其他投入要素的投入量不变，一种投入要素如果过量使用（ A  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "最终会使总产量下降"
+        },
+        {
+          "label": "B",
+          "content": "会使边际产量减少，直到等于零时为止"
+        },
+        {
+          "label": "C",
+          "content": "最终会使总产量下降，但不会等于零"
+        },
+        {
+          "label": "D",
+          "content": "总产量能继续保持增长，不过增长的幅度会越来越小"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_124"
+    },
+    {
+      "stem": "边际收益递减规律只是在下列情况下起作用（ C  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "所有投入要素的投入量都按同一比例变化"
+        },
+        {
+          "label": "B",
+          "content": "生产函数中只有一种投入要素"
+        },
+        {
+          "label": "C",
+          "content": "生产函数中至少有一种投入要素的投入量是不变"
+        },
+        {
+          "label": "D",
+          "content": "在科布—道格拉斯生产函数中诸变量的指数之和小于1"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_125"
+    },
+    {
+      "stem": "在生产技术水平不变的条件下，生产同一产量的两种不同的生产要素的不同组合构成的曲线是（    A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "无差异曲线"
+        },
+        {
+          "label": "B",
+          "content": "等成本曲线"
+        },
+        {
+          "label": "C",
+          "content": "等产量曲线"
+        },
+        {
+          "label": "D",
+          "content": "生产可能线"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_126"
+    },
+    {
+      "stem": "等产量曲线是指在这条曲线上的各点代表（  B  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "为生产同等产量投入要素的各种组合比例是不能变化的"
+        },
+        {
+          "label": "B",
+          "content": "投入要素的各种组合所能生产的产量都是相等的"
+        },
+        {
+          "label": "C",
+          "content": "为生产同等产量投入要素的价格是不变的"
+        },
+        {
+          "label": "D",
+          "content": "不管投入各种要素量如何，产量总是相等的"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_127"
+    },
+    {
+      "stem": "边际技术替代率是指（   D ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "两种要素投入的比率"
+        },
+        {
+          "label": "B",
+          "content": "一种要素投入替代另一种要素投入的比率"
+        },
+        {
+          "label": "C",
+          "content": "一种要素投入的边际产品替代另一种要素投入的边际产品的比率"
+        },
+        {
+          "label": "D",
+          "content": "在保持原有产出不变的条件下用一种要素投入替代另一种要素投入的比率"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_128"
+    },
+    {
+      "stem": "下列哪项是生产要素最适组合的条件是（   C ）",
+      "options": [
+        {
+          "label": "D",
+          "content": "ＭＰＡ＝ＭＰＢ"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_129"
+    },
+    {
+      "stem": "在短期，特定产量的总成本等于（   C   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "固定成本与平均成本之和"
+        },
+        {
+          "label": "B",
+          "content": "可变成本与平均成本之和"
+        },
+        {
+          "label": "C",
+          "content": "固定成本与可变成本之和"
+        },
+        {
+          "label": "D",
+          "content": "平均成本与边际成本之和"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_130"
+    },
+    {
+      "stem": "边际成本曲线与平均成本曲线的相交点是（    B ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "边际成本曲线的最低点"
+        },
+        {
+          "label": "B",
+          "content": "平均成本曲线的最低点"
+        },
+        {
+          "label": "C",
+          "content": "平均成本曲线下降阶段的任何一点"
+        },
+        {
+          "label": "D",
+          "content": "边际成本曲线的最高点"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_131"
+    },
+    {
+      "stem": "边际成本与平均成本的关系是（  C    ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "边际成本大于平均成本，边际成本下降"
+        },
+        {
+          "label": "B",
+          "content": "边际成本小于平均成本，边际成本下降"
+        },
+        {
+          "label": "C",
+          "content": "边际成本大于平均成本，平均成本上升"
+        },
+        {
+          "label": "D",
+          "content": "边际成本小于平均成本，平均成本上升"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_132"
+    },
+    {
+      "stem": "假定某企业全部成本函数为TC=30000+5Q-Q2，Q为产出数量。那么TVC为（  B ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "30000"
+        },
+        {
+          "label": "B",
+          "content": "5Q-Q2"
+        },
+        {
+          "label": "C",
+          "content": "5-Q"
+        },
+        {
+          "label": "D",
+          "content": "30000/Q"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_133"
+    },
+    {
+      "stem": "假定某企业全部成本函数为TC=30000+5Q-Q2，Q为产出数量。那么TFC为（   A）",
+      "options": [
+        {
+          "label": "A",
+          "content": "30000"
+        },
+        {
+          "label": "B",
+          "content": "5Q-Q2"
+        },
+        {
+          "label": "C",
+          "content": "5-Q"
+        },
+        {
+          "label": "D",
+          "content": "30000/Q"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_134"
+    },
+    {
+      "stem": "假定某企业全部成本函数为TC=30000+5Q-Q2，Q为产出数量。那么AVC为（ C  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "30000"
+        },
+        {
+          "label": "B",
+          "content": "5Q-Q2"
+        },
+        {
+          "label": "C",
+          "content": "5-Q"
+        },
+        {
+          "label": "D",
+          "content": "30000/Q"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_135"
+    },
+    {
+      "stem": "假定总成本函数为TC=16+5Q+Q2，说明这是一条（  A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "短期成本曲线"
+        },
+        {
+          "label": "B",
+          "content": "长期成本曲线"
+        },
+        {
+          "label": "D",
+          "content": "无法确定"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_136"
+    },
+    {
+      "stem": "总收益大于总成本的部分叫（  ACD   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "经济利润"
+        },
+        {
+          "label": "B",
+          "content": "贡献利润"
+        },
+        {
+          "label": "C",
+          "content": "超额利润"
+        },
+        {
+          "label": "D",
+          "content": "利润"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_137"
+    },
+    {
+      "stem": "固定成本是指厂商（  BCE   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "在短期内必须支付的生产要素的费用"
+        },
+        {
+          "label": "B",
+          "content": "在短期内不能调整的生产要素的支出"
+        },
+        {
+          "label": "C",
+          "content": "厂房及设备折旧等不变生产要素引起的费用"
+        },
+        {
+          "label": "D",
+          "content": "长期固定不变的成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_138"
+    },
+    {
+      "stem": "由于总产量等于所有边际产量之和，所以（  BD  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "在边际产量曲线上升时，总产量曲线以越来越慢的速度上升"
+        },
+        {
+          "label": "B",
+          "content": "在边际产量曲线上升时，总产量曲线以越来越快的速度上升"
+        },
+        {
+          "label": "C",
+          "content": "在边际产量曲线下降时，总产量曲线以越来越快的速度上升"
+        },
+        {
+          "label": "D",
+          "content": "在边际产量曲线下降时，总产量曲线以越来越慢的速度上升"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_139"
+    },
+    {
+      "stem": "边际收益递减规律成立的条件是（  ACD   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "生产技术水平保持不变"
+        },
+        {
+          "label": "B",
+          "content": "扩大固定资本的存量"
+        },
+        {
+          "label": "C",
+          "content": "保持其他生产要素投入数量的不变，只改变一种生产要素的投入量"
+        },
+        {
+          "label": "D",
+          "content": "边际产量递减发生在可变投入增加到一定程度之后"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_140"
+    },
+    {
+      "stem": "边际技术替代率（   AC  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "是在产出量保持不变的前提下，增加最后一个单位投入要素替代另一种投入要素的技术上的比率"
+        },
+        {
+          "label": "B",
+          "content": "是在产出量变动的前提下，增加最后一个单位投入要素替代另一种投入要素的技术上的比率"
+        },
+        {
+          "label": "C",
+          "content": "是负的，并且呈递减趋势"
+        },
+        {
+          "label": "D",
+          "content": "是正的，并且呈递减趋势"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_141"
+    },
+    {
+      "stem": "属于等产量曲线的特征的有（  BCD  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "等产量曲线凹向原点"
+        },
+        {
+          "label": "B",
+          "content": "等产量曲线向右下方倾斜"
+        },
+        {
+          "label": "C",
+          "content": "等产量曲线有无数多条，其中每一条代表一个产值，并且离原点越远，代表的产量越大"
+        },
+        {
+          "label": "D",
+          "content": "等产量曲线互不相交"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_142"
+    },
+    {
+      "stem": "下列说法正确的有（  BC ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "等产量曲线上某点的边际技术替代率等于等产量曲线上该点斜率值"
+        },
+        {
+          "label": "B",
+          "content": "等产量曲线上某点的边际技术替代率等于等产量曲线上该点斜率的绝对值"
+        },
+        {
+          "label": "C",
+          "content": "边际技术替代率等于两种生产要素的边际产量之比"
+        },
+        {
+          "label": "D",
+          "content": "边际技术替代率等于两种商品的边际效用之比。"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_143"
+    },
+    {
+      "stem": "短期成本分为（  ACD   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "短期平均成本"
+        },
+        {
+          "label": "B",
+          "content": "短期机会成本"
+        },
+        {
+          "label": "C",
+          "content": "短期总成本"
+        },
+        {
+          "label": "D",
+          "content": "短期边际成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_144"
+    },
+    {
+      "stem": "边际成本与平均成本的关系是（    ACE  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "边际成本大于平均成本，边际成本上升"
+        },
+        {
+          "label": "B",
+          "content": "边际成本小于平均成本，边际成本下降"
+        },
+        {
+          "label": "C",
+          "content": "边际成本大于平均成本，平均成本上升"
+        },
+        {
+          "label": "D",
+          "content": "边际成本小于平均成本，平均成本上升"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_145"
+    },
+    {
+      "stem": "随着产量的增加，厂商的平均固定成本（ ADE   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "大于0"
+        },
+        {
+          "label": "B",
+          "content": "等于0"
+        },
+        {
+          "label": "C",
+          "content": "先减后增"
+        },
+        {
+          "label": "D",
+          "content": "递减"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_146"
+    },
+    {
+      "stem": "在下列几种曲线中，属于U形曲线的有（  ACE    ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "平均成本"
+        },
+        {
+          "label": "B",
+          "content": "平均固定成本"
+        },
+        {
+          "label": "C",
+          "content": "平均变动成本"
+        },
+        {
+          "label": "D",
+          "content": "长期总成本"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_147"
+    },
+    {
+      "stem": "下面何种情况发生时，企业的利润最大（ AB    ）",
+      "options": [
+        {
+          "label": "C",
+          "content": "正常利润最大"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_148"
+    },
+    {
+      "stem": "在一种可变投入生产函数条件下，可变要素合理投入区域应在AP＞MP＞0的阶段。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_149"
+    },
+    {
+      "stem": "AP曲线与MP曲线交于MP曲线的最高点。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_150"
+    },
+    {
+      "stem": "在一种可变投入的生产函数中，只要平均产量是上升的，就应增加可变要素的投入量。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_151"
+    },
+    {
+      "stem": "边际产量递减，平均产量也递减。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_152"
+    },
+    {
+      "stem": "边际技术替代率是负的，并且呈递减趋势。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_153"
+    },
+    {
+      "stem": "短期内，随着产量的增加，AFC会变得越来越小，于是，AC曲线和AVC曲线之间的垂直距离越来越小，但决不会相交。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_154"
+    },
+    {
+      "stem": "MC曲线AC曲线相交于MC曲线的最低点。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_155"
+    },
+    {
+      "stem": "AP曲线的最高点和AC曲线的最低点相对应。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_156"
+    },
+    {
+      "stem": "在长期中无所谓固定成本和变动成本之分。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "A",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_157"
+    },
+    {
+      "stem": "厂商增加一单位产量时所增加的变动成本就是平均成本。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_158"
+    },
+    {
+      "stem": "短期总成本曲线与长期总成本曲线都是从原点出发向右上方倾斜的一条曲线。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_159"
+    },
+    {
+      "stem": "平均变动成本随着产量的增加越来越少。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_160"
+    },
+    {
+      "stem": "LAC可划分成不变成本和可变成本。",
+      "options": [
+        {
+          "label": "A",
+          "content": "正确"
+        },
+        {
+          "label": "B",
+          "content": "错误"
+        }
+      ],
+      "answer": "B",
+      "explanation": "",
+      "question_type": "judge",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_161"
+    },
+    {
+      "stem": "在完全竞争条件下，平均收益与边际收益的关系是（ C）",
+      "options": [
+        {
+          "label": "A",
+          "content": "平均收益大于边际收益"
+        },
+        {
+          "label": "B",
+          "content": "平均收益小于边际收益"
+        },
+        {
+          "label": "C",
+          "content": "平均收益等于边际收益"
+        },
+        {
+          "label": "D",
+          "content": "没有关系"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_162"
+    },
+    {
+      "stem": "在完全竞争条件下，个别厂商的需求曲线是一条（  A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "与横轴平行的线"
+        },
+        {
+          "label": "B",
+          "content": "向右下方倾斜的曲线"
+        },
+        {
+          "label": "C",
+          "content": "向右上方倾斜的曲线"
+        },
+        {
+          "label": "D",
+          "content": "与横轴垂直的线"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_163"
+    },
+    {
+      "stem": "当价格大于平均成本时，此时存在（ B   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "正常利润"
+        },
+        {
+          "label": "B",
+          "content": "超额利润"
+        },
+        {
+          "label": "C",
+          "content": "贡献利润"
+        },
+        {
+          "label": "D",
+          "content": "亏损"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_164"
+    },
+    {
+      "stem": "价格等于平均成本的点，叫（   A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "收支相抵点"
+        },
+        {
+          "label": "B",
+          "content": "亏损点"
+        },
+        {
+          "label": "C",
+          "content": "停止营业点"
+        },
+        {
+          "label": "D",
+          "content": "获取超额利润点"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_165"
+    },
+    {
+      "stem": "价格等于平均成本时，此时存在（  A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "正常利润"
+        },
+        {
+          "label": "B",
+          "content": "超额利润"
+        },
+        {
+          "label": "C",
+          "content": "贡献利润"
+        },
+        {
+          "label": "D",
+          "content": "亏损"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_166"
+    },
+    {
+      "stem": "在完全竞争的情况下，需求曲线与平均成本曲线相切点是（   B ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "厂商在短期内要得到最大利润的充要条件"
+        },
+        {
+          "label": "B",
+          "content": "某行业的厂商数目不再变化的条件"
+        },
+        {
+          "label": "C",
+          "content": "厂商在长期内要得到最大利润的条件"
+        },
+        {
+          "label": "D",
+          "content": "厂商在长期内亏损最小的条件"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_167"
+    },
+    {
+      "stem": "已知某企业生产的商品价格为10元，平均成本为11元，平均可变成本为8元，则该企业在短期内应该（ C  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "停止生产且亏损"
+        },
+        {
+          "label": "B",
+          "content": "继续生产且存在利润"
+        },
+        {
+          "label": "C",
+          "content": "继续生产但亏损"
+        },
+        {
+          "label": "D",
+          "content": "停止生产且不亏损"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_168"
+    },
+    {
+      "stem": "当长期均衡时，完全竞争厂商总是（  B  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "正常利润为零"
+        },
+        {
+          "label": "B",
+          "content": "经济利润为零"
+        },
+        {
+          "label": "C",
+          "content": "经济利润大于零"
+        },
+        {
+          "label": "D",
+          "content": "利润多少不确定"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_169"
+    },
+    {
+      "stem": "假如一家完全竞争企业的边际收益、边际成本和平均变动成本分别为15元、15元和12元，企业就应当（  A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "继续生产"
+        },
+        {
+          "label": "B",
+          "content": "立即停产，退出市场"
+        },
+        {
+          "label": "C",
+          "content": "提高价格"
+        },
+        {
+          "label": "D",
+          "content": "降低价格"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_170"
+    },
+    {
+      "stem": "如果一家完全竞争企业的总成本为：TC=10+2Q+Q2，产品价格P=10元，从短期看，利润最大化产量应为（  D   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "10"
+        },
+        {
+          "label": "B",
+          "content": "8"
+        },
+        {
+          "label": "C",
+          "content": "0"
+        },
+        {
+          "label": "D",
+          "content": "4"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_171"
+    },
+    {
+      "stem": "当长期均衡时，完全竞争厂商总是（ B  ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "正常利润为零"
+        },
+        {
+          "label": "B",
+          "content": "经济利润为零"
+        },
+        {
+          "label": "C",
+          "content": "经济利润大于零"
+        },
+        {
+          "label": "D",
+          "content": "利润多少不确定"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_172"
+    },
+    {
+      "stem": "假如一家完全竞争企业的边际收益、边际成本和平均变动成本分别为15元、15元和12元，企业就应当（   A ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "继续生产"
+        },
+        {
+          "label": "B",
+          "content": "立即停产，退出市场"
+        },
+        {
+          "label": "C",
+          "content": "提高价格"
+        },
+        {
+          "label": "D",
+          "content": "降低价格"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "single",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_173"
+    },
+    {
+      "stem": "在完全竞争条件下，与平均收益曲线重叠的是（  ABC   ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "价格曲线"
+        },
+        {
+          "label": "B",
+          "content": "需求曲线"
+        },
+        {
+          "label": "C",
+          "content": "边际收益曲线"
+        },
+        {
+          "label": "D",
+          "content": "总收益曲线"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_174"
+    },
+    {
+      "stem": "一个完全竞争的市场结构，必须具备下列条件（  ACDE ）",
+      "options": [
+        {
+          "label": "A",
+          "content": "市场上有很多生产者和消费者"
+        },
+        {
+          "label": "B",
+          "content": "行业中厂商生产的产品是有差别的"
+        },
+        {
+          "label": "C",
+          "content": "行业中厂商生产的产品是无差别的"
+        },
+        {
+          "label": "D",
+          "content": "厂商和生产要素可以自由流动"
+        }
+      ],
+      "answer": "",
+      "explanation": "",
+      "question_type": "multi",
+      "difficulty": "medium",
+      "knowledge_path": "微观经济学/q_econ_175"
+    }
+  ]
+}
