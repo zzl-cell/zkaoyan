@@ -18,5 +18,5 @@ export const getViewUrl = (assetId) => request.get(`/shop/library/${assetId}/vie
 export const getAssetDetail = (assetId) => request.get(`/shop/library/${assetId}`)
 
 // User Assets (purchased question banks)
-export const getUserAssets = () => request.get('/user/assets')
-export const checkUserAsset = (productId) => request.get(`/user/assets/${productId}`)
+export const getUserAssets = () => request.get('/shop/user/assets')
+export const checkUserAsset = (productId) => request.get(`/shop/user/assets/${productId}`)
